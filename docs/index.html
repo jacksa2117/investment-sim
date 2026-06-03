@@ -121,9 +121,49 @@
     .cards-grid { grid-template-columns: 1fr; }
     .leaderboard .bar-cell, .leaderboard .drawdown-col { display: none; }
   }
+
+  /* ─── Ticker tooltip ─── */
+  .ticker-label {
+    cursor: pointer;
+    border-bottom: 1px dashed var(--border);
+    transition: color 0.15s;
+  }
+  .ticker-label:hover { color: #58a6ff; border-bottom-color: #58a6ff; }
+
+  #ticker-tooltip {
+    position: fixed;
+    width: 230px;
+    background: #161b22;
+    border: 1px solid #388bfd55;
+    border-radius: 12px;
+    padding: 14px 16px;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(56,139,253,0.15);
+  }
+  #ticker-tooltip.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .tt-name    { font-weight: 700; font-size: 13px; line-height: 1.3; }
+  .tt-symbol  { color: #58a6ff; font-size: 11px; font-family: monospace; margin-bottom: 10px; margin-top: 2px; }
+  .tt-chart   { margin-bottom: 10px; }
+  .tt-row     { display: flex; justify-content: space-between; font-size: 11px; margin-top: 5px; }
+  .tt-label   { color: var(--text-muted); }
+  .tt-val     { font-weight: 600; }
+  .tt-divider { border: none; border-top: 1px solid var(--border); margin: 8px 0; }
+  .tt-52w     { display: flex; justify-content: space-between; font-size: 11px; margin-top: 6px; }
+  .tt-52w-bar { height: 4px; border-radius: 2px; background: var(--border); margin: 4px 0 6px; position: relative; }
+  .tt-52w-fill { height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--red), var(--green)); position: absolute; left: 0; top: 0; }
+  .tt-52w-dot  { width: 8px; height: 8px; border-radius: 50%; background: white; border: 2px solid #58a6ff; position: absolute; top: -2px; transform: translateX(-50%); }
 </style>
 </head>
 <body>
+
+<div id="ticker-tooltip"></div>
 
 <div class="header">
   <h1>📈 Investment Agent Simulation</h1>
@@ -258,7 +298,7 @@ function render(data) {
     if (a.holdings && a.holdings.length > 0) {
       holdingsRows = a.holdings.map(h => `
         <tr>
-          <td><strong>${h.ticker}</strong><div class="alloc-bar" style="width:${h.allocation_pct}%;background:${a.color}66;max-width:80px"></div></td>
+          <td><strong class="ticker-label" data-ticker="${h.ticker}">${h.ticker}</strong><div class="alloc-bar" style="width:${h.allocation_pct}%;background:${a.color}66;max-width:80px"></div></td>
           <td style="color:var(--text-muted)">${h.allocation_pct}%</td>
           <td>${fmtUSD(h.current_value)}</td>
           <td class="${returnClass(h.unrealized_pnl_pct)}">${fmtPct(h.unrealized_pnl_pct)}</td>
@@ -319,7 +359,7 @@ function render(data) {
       let entriesHTML = agentLog.decisions.map(d => {
         const action = d.action || 'HOLD';
         const cls = action === 'BUY' ? 'action-buy' : action === 'SELL' ? 'action-sell' : 'action-hold';
-        const tickerPart = d.ticker ? `<span class="decision-ticker">${d.ticker}</span>` : '';
+        const tickerPart = d.ticker ? `<span class="decision-ticker ticker-label" data-ticker="${d.ticker}">${d.ticker}</span>` : '';
         const valuePart = d.value ? `<span class="decision-value">${fmtUSD(d.value)}</span>` : '';
         return `
           <div class="decision-entry">
@@ -502,11 +542,105 @@ function drawChart(data, agents) {
   });
 }
 
+// ── Ticker Tooltip ────────────────────────────────────────────────────────
+const ttEl = document.getElementById('ticker-tooltip');
+let ttHideTimer = null;
+
+function showTickerTooltip(e) {
+  const ticker = e.target.dataset.ticker;
+  if (!ticker || typeof SIMULATION_DATA === 'undefined') return;
+
+  const info = (SIMULATION_DATA.ticker_info || {})[ticker];
+  if (!info) return;
+
+  clearTimeout(ttHideTimer);
+
+  // Find current price from any agent that holds it
+  let currentPrice = null;
+  for (const a of Object.values(SIMULATION_DATA.agents || {})) {
+    const h = (a.holdings || []).find(h => h.ticker === ticker);
+    if (h) { currentPrice = h.current_price; break; }
+  }
+
+  // 30d change from sparkline data — parse last vs first price from the SVG
+  // We don't store prices_30d in data.js, so derive change from holdings pnl
+  // or fall back to showing high/low only
+  const high52 = info.high52 || 0;
+  const low52  = info.low52  || 0;
+  const price  = currentPrice || high52;
+
+  // Position of current price on the 52w range bar (0–100%)
+  const rangePct = high52 > low52
+    ? Math.round((price - low52) / (high52 - low52) * 100)
+    : 50;
+
+  // Build 52w range bar
+  const rangeBar = `
+    <div class="tt-52w-bar">
+      <div class="tt-52w-fill" style="width:100%"></div>
+      <div class="tt-52w-dot" style="left:${rangePct}%"></div>
+    </div>
+    <div class="tt-52w">
+      <span style="color:var(--red)">▼ ${fmtUSD(low52)} <span style="color:var(--text-muted);font-weight:400">52w Low</span></span>
+      <span style="color:var(--green)">52w High <span style="color:var(--text-muted);font-weight:400"></span>▲ ${fmtUSD(high52)}</span>
+    </div>`;
+
+  // Price line
+  const priceStr = currentPrice ? fmtUSD(currentPrice) : '—';
+
+  ttEl.innerHTML = `
+    <div class="tt-name">${info.name || ticker}</div>
+    <div class="tt-symbol">$${ticker}</div>
+    <div class="tt-chart">${info.sparkline || ''}</div>
+    <hr class="tt-divider">
+    <div class="tt-row">
+      <span class="tt-label">Current price</span>
+      <span class="tt-val">${priceStr}</span>
+    </div>
+    <div class="tt-row" style="margin-top:10px">
+      <span class="tt-label">52-week range</span>
+    </div>
+    ${rangeBar}
+  `;
+
+  // Smart positioning — prefer right of element, flip left if near edge
+  const rect   = e.target.getBoundingClientRect();
+  const ttW    = 230;
+  const ttH    = ttEl.offsetHeight || 240;
+  const margin = 12;
+
+  let left = rect.right + margin;
+  let top  = rect.top + (rect.height / 2) - (ttH / 2);
+
+  if (left + ttW > window.innerWidth - 8) {
+    left = rect.left - ttW - margin;
+  }
+  if (left < 8) left = 8;
+  if (top < 8)  top  = 8;
+  if (top + ttH > window.innerHeight - 8) top = window.innerHeight - ttH - 8;
+
+  ttEl.style.left = left + 'px';
+  ttEl.style.top  = top  + 'px';
+  ttEl.classList.add('visible');
+}
+
+function hideTickerTooltip() {
+  ttHideTimer = setTimeout(() => ttEl.classList.remove('visible'), 120);
+}
+
+// Delegate hover to document (works on dynamically rendered tickers)
+document.addEventListener('mouseover', e => {
+  if (e.target.classList.contains('ticker-label')) showTickerTooltip(e);
+});
+document.addEventListener('mouseout', e => {
+  if (e.target.classList.contains('ticker-label')) hideTickerTooltip();
+});
+
+
 // ── Boot ─────────────────────────────────────────────────────────────────
 if (typeof SIMULATION_DATA !== 'undefined') {
   render(SIMULATION_DATA);
 } else {
-  // data.js not loaded yet — show placeholder (already in HTML)
   document.getElementById('last-updated').textContent = 'No data yet — run runner.py first';
 }
 </script>
