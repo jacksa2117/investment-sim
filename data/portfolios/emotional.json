@@ -6,15 +6,15 @@
     "PLTR": {
       "shares": 42.715384,
       "avg_cost": 152.17,
-      "current_price": 152.17,
-      "current_value": 6500.0,
-      "unrealized_pnl_pct": 0.0
+      "current_price": 142.2,
+      "current_value": 6074.13,
+      "unrealized_pnl_pct": -6.55
     }
   },
-  "total_value": 10000.0,
-  "return_pct": -0.0,
+  "total_value": 9574.13,
+  "return_pct": -4.26,
   "peak_value": 10000,
-  "max_drawdown": 0.0,
-  "last_updated": "2026-06-02",
+  "max_drawdown": 4.26,
+  "last_updated": "2026-06-03",
   "trade_count": 1
 }

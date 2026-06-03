@@ -20,6 +20,26 @@
         "Emotional": -0.0
       },
       "fear_greed": 50.0
+    },
+    {
+      "date": "2026-06-03",
+      "values": {
+        "Conservative": 9971.63,
+        "Passive Indexer": 9942.97,
+        "Aggressive Growth": 9543.39,
+        "Speculator": 9835.74,
+        "Value Investor": 10013.36,
+        "Emotional": 9574.13
+      },
+      "returns": {
+        "Conservative": -0.28,
+        "Passive Indexer": -0.57,
+        "Aggressive Growth": -4.57,
+        "Speculator": -1.64,
+        "Value Investor": 0.13,
+        "Emotional": -4.26
+      },
+      "fear_greed": 50.0
     }
   ]
 }
