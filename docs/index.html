@@ -637,6 +637,27 @@ document.addEventListener('mouseout', e => {
 });
 
 
+// ── Auto-refresh: re-fetches data.js every 5 min, re-renders if changed ──
+(function() {
+  var _lastUpdated = typeof SIMULATION_DATA !== 'undefined' ? SIMULATION_DATA.last_updated : null;
+  setInterval(function() {
+    fetch('data.js?_=' + Date.now())
+      .then(function(r) { return r.text(); })
+      .then(function(text) {
+        var match = text.match(/const SIMULATION_DATA\s*=\s*([\s\S]+)/);
+        if (!match) return;
+        try {
+          var newData = JSON.parse(match[1].replace(/;\s*$/, ''));
+          if (newData.last_updated !== _lastUpdated) {
+            _lastUpdated = newData.last_updated;
+            render(newData);
+          }
+        } catch(e) {}
+      })
+      .catch(function() {});
+  }, 5 * 60 * 1000);
+})();
+
 // ── Boot ─────────────────────────────────────────────────────────────────
 if (typeof SIMULATION_DATA !== 'undefined') {
   render(SIMULATION_DATA);
