@@ -1,0 +1,47 @@
+[
+  {
+    "date": "2026-06-02",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "ETH-USD",
+        "shares": 0.5361,
+        "price": 1865.16,
+        "value": 1000.0,
+        "justification": "RSI=27 oversold bounce on ETH-USD. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 10000.0,
+    "return_pct": -0.0
+  },
+  {
+    "date": "2026-06-02",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "ETH-USD",
+        "shares": 0.5359,
+        "price": 1866.02,
+        "value": 1000.05,
+        "justification": "RSI=27 oversold bounce on ETH-USD. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 10000.46,
+    "return_pct": 0.0
+  },
+  {
+    "date": "2026-06-02",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "ETH-USD",
+        "shares": 0.538,
+        "price": 1857.01,
+        "value": 999.08,
+        "justification": "RSI=27 oversold bounce on ETH-USD. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 9990.8,
+    "return_pct": -0.09
+  }
+]

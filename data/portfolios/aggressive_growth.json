@@ -1,0 +1,49 @@
+{
+  "agent_name": "Aggressive Growth",
+  "starting_capital": 10000,
+  "cash": 500.0,
+  "holdings": {
+    "PLTR": {
+      "shares": 12.486035,
+      "avg_cost": 152.17,
+      "current_price": 152.17,
+      "current_value": 1900.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "NVDA": {
+      "shares": 8.527062,
+      "avg_cost": 222.82,
+      "current_price": 222.82,
+      "current_value": 1900.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "SNOW": {
+      "shares": 7.275791,
+      "avg_cost": 261.14,
+      "current_price": 261.14,
+      "current_value": 1900.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "CRWD": {
+      "shares": 2.470902,
+      "avg_cost": 768.95,
+      "current_price": 768.95,
+      "current_value": 1900.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "SHOP": {
+      "shares": 16.237928,
+      "avg_cost": 117.01,
+      "current_price": 117.01,
+      "current_value": 1900.0,
+      "unrealized_pnl_pct": 0.0
+    }
+  },
+  "total_value": 10000.0,
+  "return_pct": 0.0,
+  "peak_value": 10000.0,
+  "max_drawdown": 0.0,
+  "last_updated": "2026-06-02",
+  "trade_count": 5,
+  "last_rebalance_month": "2026-06"
+}

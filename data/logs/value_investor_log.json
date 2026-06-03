@@ -1,0 +1,55 @@
+[
+  {
+    "date": "2026-06-02",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "BRK-B",
+        "shares": 4.2417,
+        "price": 471.51,
+        "value": 2000.0,
+        "justification": "Value opportunity: BRK-B. P/E=14.0, P/B=0.0. FCF positive, debt manageable. News: 'no fundamental news'. F&G=50 \u2014 irrelevant to intrinsic value. Reddit mentions: IGNORED."
+      },
+      {
+        "action": "BUY",
+        "ticker": "JPM",
+        "shares": 6.6454,
+        "price": 300.96,
+        "value": 2000.0,
+        "justification": "Value opportunity: JPM. P/E=14.4, P/B=2.3. FCF positive, debt manageable. News: 'no fundamental news'. F&G=50 \u2014 irrelevant to intrinsic value. Reddit mentions: IGNORED."
+      },
+      {
+        "action": "BUY",
+        "ticker": "BAC",
+        "shares": 28.5823,
+        "price": 52.48,
+        "value": 1500.0,
+        "justification": "Value opportunity: BAC. P/E=13.0, P/B=1.4. FCF positive, debt manageable. News: 'no fundamental news'. F&G=50 \u2014 irrelevant to intrinsic value. Reddit mentions: IGNORED."
+      }
+    ],
+    "portfolio_value": 10000.0,
+    "return_pct": 0.0
+  },
+  {
+    "date": "2026-06-02",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Already analyzed fundamentals this week \u2014 checking again next week. Low turnover is a feature. Reddit buzzing about: nothing \u2014 IGNORED. Portfolio: $10,000.00."
+      }
+    ],
+    "portfolio_value": 10000.0,
+    "return_pct": 0.0
+  },
+  {
+    "date": "2026-06-02",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Already analyzed fundamentals this week \u2014 checking again next week. Low turnover is a feature. Reddit buzzing about: nothing \u2014 IGNORED. Portfolio: $10,000.00."
+      }
+    ],
+    "portfolio_value": 10000.0,
+    "return_pct": 0.0
+  }
+]

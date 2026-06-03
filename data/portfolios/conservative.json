@@ -1,0 +1,41 @@
+{
+  "agent_name": "Conservative",
+  "starting_capital": 10000,
+  "cash": 1000.0,
+  "holdings": {
+    "BND": {
+      "shares": 47.814208,
+      "avg_cost": 73.2,
+      "current_price": 73.2,
+      "current_value": 3500.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "GLD": {
+      "shares": 4.854958,
+      "avg_cost": 411.95,
+      "current_price": 411.95,
+      "current_value": 2000.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "SCHD": {
+      "shares": 77.232005,
+      "avg_cost": 32.37,
+      "current_price": 32.37,
+      "current_value": 2500.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "VIG": {
+      "shares": 4.238366,
+      "avg_cost": 235.94,
+      "current_price": 235.94,
+      "current_value": 1000.0,
+      "unrealized_pnl_pct": 0.0
+    }
+  },
+  "total_value": 10000.0,
+  "return_pct": 0.0,
+  "peak_value": 10000.0,
+  "max_drawdown": 0.0,
+  "last_updated": "2026-06-02",
+  "trade_count": 4
+}

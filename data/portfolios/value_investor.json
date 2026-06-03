@@ -1,0 +1,35 @@
+{
+  "agent_name": "Value Investor",
+  "starting_capital": 10000,
+  "cash": 4500.0,
+  "holdings": {
+    "BRK-B": {
+      "shares": 4.241692,
+      "avg_cost": 471.51,
+      "current_price": 471.51,
+      "current_value": 2000.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "JPM": {
+      "shares": 6.645401,
+      "avg_cost": 300.96,
+      "current_price": 300.96,
+      "current_value": 2000.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "BAC": {
+      "shares": 28.582317,
+      "avg_cost": 52.48,
+      "current_price": 52.48,
+      "current_value": 1500.0,
+      "unrealized_pnl_pct": 0.0
+    }
+  },
+  "total_value": 10000.0,
+  "return_pct": 0.0,
+  "peak_value": 10000.0,
+  "max_drawdown": 0.0,
+  "last_updated": "2026-06-02",
+  "trade_count": 3,
+  "last_check_week": "2026-22"
+}

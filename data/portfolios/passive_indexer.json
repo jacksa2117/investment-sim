@@ -1,0 +1,27 @@
+{
+  "agent_name": "Passive Indexer",
+  "starting_capital": 10000,
+  "cash": 2100.0,
+  "holdings": {
+    "SPY": {
+      "shares": 9.21574,
+      "avg_cost": 759.57,
+      "current_price": 759.57,
+      "current_value": 7000.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "VT": {
+      "shares": 5.647945,
+      "avg_cost": 159.35,
+      "current_price": 159.35,
+      "current_value": 900.0,
+      "unrealized_pnl_pct": 0.0
+    }
+  },
+  "total_value": 10000.0,
+  "return_pct": -0.0,
+  "peak_value": 10000,
+  "max_drawdown": 0.0,
+  "last_updated": "2026-06-02",
+  "trade_count": 2
+}

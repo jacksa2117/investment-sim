@@ -1,0 +1,20 @@
+{
+  "agent_name": "Speculator",
+  "starting_capital": 10000,
+  "cash": 7000.874,
+  "holdings": {
+    "ETH-USD": {
+      "shares": 1.610077,
+      "avg_cost": 1862.7229,
+      "current_price": 1857.01,
+      "current_value": 2989.93,
+      "unrealized_pnl_pct": -0.31
+    }
+  },
+  "total_value": 9990.8,
+  "return_pct": -0.09,
+  "peak_value": 10000.46,
+  "max_drawdown": 0.1,
+  "last_updated": "2026-06-02",
+  "trade_count": 3
+}

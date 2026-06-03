@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investment Agent Simulation</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface2: #21262d;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --green: #3fb950;
+    --red: #f85149;
+    --yellow: #d29922;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.5; }
+
+  /* ─── Header ─── */
+  .header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+  .header h1 { font-size: 20px; font-weight: 700; }
+  .header-meta { display: flex; gap: 24px; align-items: center; }
+  .fg-badge { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+  .fg-extreme-fear  { background: #7c1c1c; color: #ffb3b3; }
+  .fg-fear          { background: #5a3000; color: #ffcc80; }
+  .fg-neutral       { background: #1f3a1f; color: #a8d5a8; }
+  .fg-greed         { background: #003d2e; color: #80ffcc; }
+  .fg-extreme-greed { background: #003d4a; color: #80e5ff; }
+  .last-updated { color: var(--text-muted); font-size: 12px; }
+
+  .container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+  .section-title { font-size: 16px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; }
+
+  /* ─── Leaderboard ─── */
+  .leaderboard { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 32px; }
+  .leaderboard table { width: 100%; border-collapse: collapse; }
+  .leaderboard th { background: var(--surface2); padding: 10px 16px; text-align: left; font-size: 11px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em; border-bottom: 1px solid var(--border); }
+  .leaderboard td { padding: 14px 16px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  .leaderboard tr:last-child td { border-bottom: none; }
+  .leaderboard tr:hover td { background: rgba(255,255,255,0.03); }
+  .rank { font-size: 18px; width: 40px; }
+  .agent-name { font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .agent-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .agent-strategy { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+  .value { font-weight: 600; font-size: 15px; }
+  .return-positive { color: var(--green); font-weight: 700; }
+  .return-negative { color: var(--red); font-weight: 700; }
+  .return-neutral   { color: var(--text-muted); }
+  .drawdown { color: var(--red); }
+  .bar-cell { width: 120px; }
+  .return-bar-bg { background: var(--surface2); border-radius: 4px; height: 8px; overflow: hidden; }
+  .return-bar { height: 8px; border-radius: 4px; min-width: 2px; transition: width 0.3s; }
+
+  /* ─── Chart ─── */
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+  .chart-wrapper { position: relative; height: 320px; }
+
+  /* ─── Agent Cards ─── */
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; margin-bottom: 32px; }
+  .agent-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .agent-card-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-start; }
+  .agent-card-title { display: flex; align-items: center; gap: 10px; }
+  .agent-card-title .emoji { font-size: 20px; }
+  .agent-card-title h3 { font-size: 15px; font-weight: 700; }
+  .agent-card-title .strategy-label { font-size: 11px; color: var(--text-muted); }
+  .agent-card-value { text-align: right; }
+  .agent-card-value .val { font-size: 18px; font-weight: 700; }
+  .agent-card-value .ret { font-size: 13px; }
+  .agent-card-body { padding: 16px 20px; }
+  .holdings-table { width: 100%; }
+  .holdings-table th { font-size: 10px; text-transform: uppercase; color: var(--text-muted); padding: 4px 0; }
+  .holdings-table td { padding: 5px 0; font-size: 13px; border-top: 1px solid var(--border); }
+  .holdings-table td:last-child { text-align: right; }
+  .alloc-bar { height: 3px; border-radius: 2px; margin-top: 2px; }
+  .cash-row { color: var(--text-muted); font-style: italic; }
+  .stats-row { display: flex; gap: 16px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+  .stat { flex: 1; }
+  .stat-label { font-size: 10px; text-transform: uppercase; color: var(--text-muted); }
+  .stat-value { font-size: 13px; font-weight: 600; }
+
+  /* ─── Decision Log ─── */
+  .decision-log { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 32px; }
+  .decision-log-header { background: var(--surface2); padding: 14px 20px; border-bottom: 1px solid var(--border); }
+  .decision-agent { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .decision-agent:last-child { border-bottom: none; }
+  .decision-agent-name { display: flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 10px; font-size: 14px; }
+  .decision-entry { background: var(--surface2); border-radius: 8px; padding: 10px 14px; margin-bottom: 8px; display: flex; gap: 12px; align-items: flex-start; }
+  .decision-entry:last-child { margin-bottom: 0; }
+  .action-badge { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+  .action-buy  { background: rgba(63,185,80,0.2); color: var(--green); }
+  .action-sell { background: rgba(248,81,73,0.2); color: var(--red); }
+  .action-hold { background: rgba(139,148,158,0.2); color: var(--text-muted); }
+  .decision-text { font-size: 12px; color: var(--text-muted); line-height: 1.6; }
+  .decision-ticker { font-weight: 700; color: var(--text); margin-right: 4px; }
+  .decision-value { color: var(--yellow); margin-right: 8px; }
+
+  /* ─── Sentiment Panel ─── */
+  .sentiment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px; }
+  @media (max-width: 900px) { .sentiment-grid { grid-template-columns: 1fr; } }
+  .sentiment-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+  .sentiment-card h3 { font-size: 13px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
+  .news-item { display: flex; gap: 10px; align-items: flex-start; padding: 7px 0; border-bottom: 1px solid var(--border); }
+  .news-item:last-child { border-bottom: none; }
+  .sent-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+  .news-title { font-size: 12px; line-height: 1.5; flex: 1; }
+  .news-source { font-size: 10px; color: var(--text-muted); }
+  .wsb-ticker { display: inline-flex; gap: 6px; align-items: center; background: var(--surface2); border-radius: 6px; padding: 4px 10px; margin: 3px; font-size: 12px; font-weight: 600; }
+  .wsb-count { color: var(--text-muted); font-weight: 400; }
+
+  /* ─── No data state ─── */
+  .no-data { text-align: center; padding: 80px 20px; color: var(--text-muted); }
+  .no-data h2 { font-size: 24px; margin-bottom: 12px; }
+  .no-data code { background: var(--surface2); padding: 2px 8px; border-radius: 4px; font-family: monospace; color: var(--text); }
+
+  /* ─── Responsive ─── */
+  @media (max-width: 700px) {
+    .cards-grid { grid-template-columns: 1fr; }
+    .leaderboard .bar-cell, .leaderboard .drawdown-col { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📈 Investment Agent Simulation</h1>
+  <div class="header-meta">
+    <span id="fg-badge" class="fg-badge">Fear & Greed: –</span>
+    <span id="last-updated" class="last-updated">Loading...</span>
+  </div>
+</div>
+
+<div class="container" id="app">
+  <div class="no-data">
+    <h2>🚀 Simulation Not Started Yet</h2>
+    <p style="margin-bottom:16px">Run the daily runner to generate data:</p>
+    <code>python runner.py</code>
+    <p style="margin-top:16px;font-size:12px">Then refresh this page.</p>
+  </div>
+</div>
+
+<script src="data.js" onerror="console.log('No data.js yet')"></script>
+<script>
+// ── Utilities ──────────────────────────────────────────────────────────────
+function fmtUSD(v) {
+  return '$' + Number(v).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+function fmtPct(v, plus=true) {
+  const sign = v >= 0 ? (plus?'+':'') : '';
+  return sign + Number(v).toFixed(2) + '%';
+}
+function returnClass(v) {
+  if (v > 0) return 'return-positive';
+  if (v < 0) return 'return-negative';
+  return 'return-neutral';
+}
+function fgClass(v) {
+  if (v <= 25) return 'fg-extreme-fear';
+  if (v <= 45) return 'fg-fear';
+  if (v <= 55) return 'fg-neutral';
+  if (v <= 75) return 'fg-greed';
+  return 'fg-extreme-greed';
+}
+function fgLabel(v, cls) {
+  const labels = {'fg-extreme-fear':'😱 Extreme Fear','fg-fear':'😨 Fear','fg-neutral':'😐 Neutral','fg-greed':'😏 Greed','fg-extreme-greed':'🤑 Extreme Greed'};
+  return `${labels[cls]||'?'} (${Math.round(v)})`;
+}
+function medal(i) { return ['🥇','🥈','🥉','4th','5th','6th'][i] || (i+1)+'th'; }
+
+// ── Main render ────────────────────────────────────────────────────────────
+function render(data) {
+  const app = document.getElementById('app');
+  app.innerHTML = '';
+
+  // Header meta
+  const fg = data.fear_greed || {value:50, classification:'Neutral'};
+  const fgCls = fgClass(fg.value);
+  const fgEl = document.getElementById('fg-badge');
+  fgEl.textContent = fgLabel(fg.value, fgCls);
+  fgEl.className = 'fg-badge ' + fgCls;
+  document.getElementById('last-updated').textContent =
+    `Last updated: ${data.last_updated} · Day ${data.days_running || 1}`;
+
+  // Sort agents by return
+  const agents = Object.values(data.agents).sort((a,b) => b.return_pct - a.return_pct);
+  const maxRet = Math.max(...agents.map(a => Math.abs(a.return_pct)), 1);
+
+  // ── Leaderboard ──
+  const lb = document.createElement('div');
+  lb.innerHTML = `<div class="section-title">🏆 Leaderboard</div>`;
+  const table = document.createElement('div');
+  table.className = 'leaderboard';
+
+  let rows = agents.map((a, i) => `
+    <tr>
+      <td class="rank">${medal(i)}</td>
+      <td>
+        <div class="agent-name">
+          <span class="agent-dot" style="background:${a.color}"></span>
+          <div>
+            <div>${a.emoji} ${a.name}</div>
+            <div class="agent-strategy">${a.strategy}</div>
+          </div>
+        </div>
+      </td>
+      <td class="value">${fmtUSD(a.current_value)}</td>
+      <td class="${returnClass(a.return_pct)}">${fmtPct(a.return_pct)}</td>
+      <td class="${returnClass(a.return_usd)}">${fmtUSD(a.return_usd)}</td>
+      <td class="drawdown drawdown-col">-${a.max_drawdown.toFixed(1)}%</td>
+      <td class="bar-cell">
+        <div class="return-bar-bg">
+          <div class="return-bar" style="width:${Math.abs(a.return_pct)/maxRet*100}%;background:${a.return_pct>=0?'var(--green)':'var(--red)'}"></div>
+        </div>
+      </td>
+      <td style="color:var(--text-muted);font-size:12px">${a.trade_count} trades</td>
+    </tr>
+  `).join('');
+
+  table.innerHTML = `<table>
+    <thead><tr>
+      <th>#</th><th>Agent</th><th>Portfolio Value</th><th>Return %</th>
+      <th>Return $</th><th class="drawdown-col">Max DD</th><th class="bar-cell"></th><th>Activity</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+  lb.appendChild(table);
+  app.appendChild(lb);
+
+  // ── Performance Chart ──
+  const chartSection = document.createElement('div');
+  chartSection.innerHTML = '<div class="section-title">📊 Portfolio Performance</div>';
+  const chartCard = document.createElement('div');
+  chartCard.className = 'chart-card';
+  chartCard.innerHTML = '<div class="chart-wrapper"><canvas id="perfChart"></canvas></div>';
+  chartSection.appendChild(chartCard);
+  app.appendChild(chartSection);
+
+  requestAnimationFrame(() => drawChart(data, agents));
+
+  // ── Agent Cards ──
+  const cardsSection = document.createElement('div');
+  cardsSection.innerHTML = '<div class="section-title">💼 Current Holdings</div>';
+  const cardsGrid = document.createElement('div');
+  cardsGrid.className = 'cards-grid';
+
+  agents.forEach(a => {
+    const card = document.createElement('div');
+    card.className = 'agent-card';
+    card.style.borderTopColor = a.color;
+    card.style.borderTopWidth = '3px';
+    card.style.borderTopStyle = 'solid';
+
+    // Holdings rows
+    let holdingsRows = '';
+    if (a.holdings && a.holdings.length > 0) {
+      holdingsRows = a.holdings.map(h => `
+        <tr>
+          <td><strong>${h.ticker}</strong><div class="alloc-bar" style="width:${h.allocation_pct}%;background:${a.color}66;max-width:80px"></div></td>
+          <td style="color:var(--text-muted)">${h.allocation_pct}%</td>
+          <td>${fmtUSD(h.current_value)}</td>
+          <td class="${returnClass(h.unrealized_pnl_pct)}">${fmtPct(h.unrealized_pnl_pct)}</td>
+        </tr>
+      `).join('');
+    }
+    if (a.cash > 1) {
+      holdingsRows += `<tr class="cash-row"><td>💵 Cash</td><td>${a.cash_pct}%</td><td>${fmtUSD(a.cash)}</td><td>–</td></tr>`;
+    }
+    if (!holdingsRows) {
+      holdingsRows = `<tr><td colspan="4" style="color:var(--text-muted);text-align:center;padding:12px">No positions yet</td></tr>`;
+    }
+
+    card.innerHTML = `
+      <div class="agent-card-header">
+        <div class="agent-card-title">
+          <span class="emoji">${a.emoji}</span>
+          <div>
+            <h3>${a.name}</h3>
+            <div class="strategy-label">${a.strategy}</div>
+          </div>
+        </div>
+        <div class="agent-card-value">
+          <div class="val">${fmtUSD(a.current_value)}</div>
+          <div class="ret ${returnClass(a.return_pct)}">${fmtPct(a.return_pct)} (${fmtUSD(a.return_usd)})</div>
+        </div>
+      </div>
+      <div class="agent-card-body">
+        <table class="holdings-table">
+          <thead><tr><th>Asset</th><th>Alloc</th><th>Value</th><th>P&L</th></tr></thead>
+          <tbody>${holdingsRows}</tbody>
+        </table>
+        <div class="stats-row">
+          <div class="stat"><div class="stat-label">Max Drawdown</div><div class="stat-value" style="color:var(--red)">-${a.max_drawdown.toFixed(1)}%</div></div>
+          <div class="stat"><div class="stat-label">Peak Value</div><div class="stat-value">${fmtUSD(a.peak_value)}</div></div>
+          <div class="stat"><div class="stat-label">Trades</div><div class="stat-value">${a.trade_count}</div></div>
+          <div class="stat"><div class="stat-label">Cash</div><div class="stat-value">${fmtUSD(a.cash)}</div></div>
+        </div>
+      </div>`;
+    cardsGrid.appendChild(card);
+  });
+
+  cardsSection.appendChild(cardsGrid);
+  app.appendChild(cardsSection);
+
+  // ── Decision Log ──
+  if (data.today_decisions && data.today_decisions.length > 0) {
+    const logSection = document.createElement('div');
+    logSection.innerHTML = '<div class="section-title">📋 Today\'s Decisions</div>';
+    const logCard = document.createElement('div');
+    logCard.className = 'decision-log';
+
+    data.today_decisions.forEach(agentLog => {
+      const agentMeta = data.agents[agentLog.agent] || {};
+      const block = document.createElement('div');
+      block.className = 'decision-agent';
+
+      let entriesHTML = agentLog.decisions.map(d => {
+        const action = d.action || 'HOLD';
+        const cls = action === 'BUY' ? 'action-buy' : action === 'SELL' ? 'action-sell' : 'action-hold';
+        const tickerPart = d.ticker ? `<span class="decision-ticker">${d.ticker}</span>` : '';
+        const valuePart = d.value ? `<span class="decision-value">${fmtUSD(d.value)}</span>` : '';
+        return `
+          <div class="decision-entry">
+            <span class="action-badge ${cls}">${action}</span>
+            <div class="decision-text">${tickerPart}${valuePart}${d.justification || ''}</div>
+          </div>`;
+      }).join('');
+
+      block.innerHTML = `
+        <div class="decision-agent-name">
+          <span style="width:10px;height:10px;border-radius:50%;background:${agentLog.color||'#888'};display:inline-block"></span>
+          ${agentMeta.emoji||''} ${agentLog.agent}
+          <span style="color:var(--text-muted);font-weight:400;font-size:12px;margin-left:8px">
+            ${fmtUSD(agentLog.portfolio_value)} · ${fmtPct(agentLog.return_pct)}
+          </span>
+        </div>
+        ${entriesHTML}`;
+      logCard.appendChild(block);
+    });
+
+    logSection.appendChild(logCard);
+    app.appendChild(logSection);
+  }
+
+  // ── Sentiment Panel ──
+  const sent = data.sentiment || {};
+  const headlines = sent.market_headlines || [];
+  const wsbPosts  = sent.reddit_wsb || [];
+  const invPosts  = sent.reddit_investing || [];
+  const wsbTickers = sent.wsb_tickers || {};
+
+  if (headlines.length || wsbPosts.length) {
+    const sentSection = document.createElement('div');
+    sentSection.innerHTML = '<div class="section-title">📰 News & Sentiment</div>';
+    const sentGrid = document.createElement('div');
+    sentGrid.className = 'sentiment-grid';
+
+    // NewsAPI headlines
+    if (headlines.length) {
+      const card = document.createElement('div');
+      card.className = 'sentiment-card';
+      const items = headlines.slice(0,8).map(h => {
+        const s = h.sentiment || 0;
+        const col = s > 0.1 ? 'var(--green)' : s < -0.1 ? 'var(--red)' : 'var(--text-muted)';
+        return `<div class="news-item">
+          <div class="sent-dot" style="background:${col}"></div>
+          <div>
+            <div class="news-title">${h.title||''}</div>
+            <div class="news-source">${h.source||''} · sentiment: ${s >= 0 ? '+' : ''}${s.toFixed(2)}</div>
+          </div></div>`;
+      }).join('');
+      card.innerHTML = `<h3>📡 Market Headlines (NewsAPI)</h3>${items}`;
+      sentGrid.appendChild(card);
+    }
+
+    // WSB tickers + top posts
+    const wsbCard = document.createElement('div');
+    wsbCard.className = 'sentiment-card';
+    const topTickers = Object.entries(wsbTickers).sort((a,b)=>b[1]-a[1]).slice(0,10);
+    const tickerChips = topTickers.map(([t,c]) =>
+      `<span class="wsb-ticker">$${t} <span class="wsb-count">${c}×</span></span>`
+    ).join('');
+    const postItems = wsbPosts.slice(0,5).map(p => {
+      const s = p.sentiment || 0;
+      const col = s > 0.1 ? 'var(--green)' : s < -0.1 ? 'var(--red)' : 'var(--text-muted)';
+      return `<div class="news-item">
+        <div class="sent-dot" style="background:${col}"></div>
+        <div>
+          <div class="news-title">${p.title||''}</div>
+          <div class="news-source">r/wallstreetbets · ▲${(p.score||0).toLocaleString()} · ${p.comments||0} comments</div>
+        </div></div>`;
+    }).join('');
+    wsbCard.innerHTML = `<h3>🎰 r/WallStreetBets Buzz</h3>
+      <div style="margin-bottom:12px;flex-wrap:wrap;display:flex">${tickerChips||'<span style="color:var(--text-muted)">No data</span>'}</div>
+      ${postItems}`;
+    sentGrid.appendChild(wsbCard);
+
+    // r/investing posts
+    if (invPosts.length) {
+      const invCard = document.createElement('div');
+      invCard.className = 'sentiment-card';
+      const invItems = invPosts.slice(0,6).map(p => {
+        const s = p.sentiment || 0;
+        const col = s > 0.1 ? 'var(--green)' : s < -0.1 ? 'var(--red)' : 'var(--text-muted)';
+        return `<div class="news-item">
+          <div class="sent-dot" style="background:${col}"></div>
+          <div>
+            <div class="news-title">${p.title||''}</div>
+            <div class="news-source">r/investing · ▲${(p.score||0).toLocaleString()}</div>
+          </div></div>`;
+      }).join('');
+      invCard.innerHTML = `<h3>📖 r/investing Community</h3>${invItems}`;
+      sentGrid.appendChild(invCard);
+    }
+
+    // Overall sentiment gauge
+    const overallSent = sent.overall_sentiment || 0;
+    const sentColor = overallSent > 0.1 ? 'var(--green)' : overallSent < -0.1 ? 'var(--red)' : 'var(--text-muted)';
+    const gaugeCard = document.createElement('div');
+    gaugeCard.className = 'sentiment-card';
+    gaugeCard.innerHTML = `<h3>🧠 Sentiment Summary</h3>
+      <div style="text-align:center;padding:20px 0">
+        <div style="font-size:48px;font-weight:800;color:${sentColor}">${overallSent >= 0 ? '+' : ''}${(overallSent*100).toFixed(0)}</div>
+        <div style="color:var(--text-muted);font-size:13px;margin-top:4px">Overall market sentiment score</div>
+        <div style="margin-top:16px;display:flex;gap:24px;justify-content:center">
+          <div><div style="font-size:20px;font-weight:700">${headlines.length}</div><div style="font-size:11px;color:var(--text-muted)">News headlines</div></div>
+          <div><div style="font-size:20px;font-weight:700">${wsbPosts.length}</div><div style="font-size:11px;color:var(--text-muted)">WSB posts</div></div>
+          <div><div style="font-size:20px;font-weight:700">${Object.keys(wsbTickers).length}</div><div style="font-size:11px;color:var(--text-muted)">Tickers buzzing</div></div>
+        </div>
+      </div>`;
+    sentGrid.appendChild(gaugeCard);
+
+    sentSection.appendChild(sentGrid);
+    app.appendChild(sentSection);
+  }
+}
+
+function drawChart(data, agents) {
+  const ctx = document.getElementById('perfChart');
+  if (!ctx) return;
+
+  const history = data.history || [];
+  if (history.length === 0) {
+    ctx.parentElement.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:40px">Not enough data yet — check back tomorrow.</p>';
+    return;
+  }
+
+  const labels = history.map(d => d.date);
+  const datasets = agents.map(a => ({
+    label: a.name,
+    data: history.map(d => {
+      const v = d.values && d.values[a.name];
+      return v ? +((v / 10000 - 1) * 100).toFixed(2) : null;
+    }),
+    borderColor: a.color,
+    backgroundColor: 'transparent',
+    borderWidth: 2,
+    pointRadius: history.length < 30 ? 4 : 0,
+    pointHoverRadius: 6,
+    tension: 0.3,
+    spanGaps: true,
+  }));
+
+  new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          labels: { color: '#8b949e', padding: 20, usePointStyle: true, pointStyleWidth: 10 }
+        },
+        tooltip: {
+          backgroundColor: '#21262d',
+          borderColor: '#30363d',
+          borderWidth: 1,
+          titleColor: '#e6edf3',
+          bodyColor: '#8b949e',
+          callbacks: {
+            label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y >= 0 ? '+' : ''}${ctx.parsed.y?.toFixed(2)}%`
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: '#8b949e', maxTicksLimit: 12 },
+          grid: { color: '#21262d' },
+        },
+        y: {
+          ticks: {
+            color: '#8b949e',
+            callback: v => (v >= 0 ? '+' : '') + v + '%',
+          },
+          grid: { color: '#21262d' },
+        }
+      }
+    }
+  });
+}
+
+// ── Boot ─────────────────────────────────────────────────────────────────
+if (typeof SIMULATION_DATA !== 'undefined') {
+  render(SIMULATION_DATA);
+} else {
+  // data.js not loaded yet — show placeholder (already in HTML)
+  document.getElementById('last-updated').textContent = 'No data yet — run runner.py first';
+}
+</script>
+</body>
+</html>
