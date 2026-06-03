@@ -59,5 +59,16 @@
     ],
     "portfolio_value": 10000.0,
     "return_pct": 0.0
+  },
+  {
+    "date": "2026-06-02",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "All positions within 4% of targets. Macro: 1 macro headline(s) \u2014 mixed signals. F&G=50. Latest SPY headline: ''. Conservative strategy: ignore noise, stay the course."
+      }
+    ],
+    "portfolio_value": 10000.0,
+    "return_pct": 0.0
   }
 ]
