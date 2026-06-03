@@ -7,7 +7,7 @@
         "Conservative": 10000.0,
         "Passive Indexer": 10000.0,
         "Aggressive Growth": 10000.0,
-        "Speculator": 9990.8,
+        "Speculator": 9998.72,
         "Value Investor": 10000.0,
         "Emotional": 10000.0
       },
@@ -15,7 +15,7 @@
         "Conservative": 0.0,
         "Passive Indexer": -0.0,
         "Aggressive Growth": 0.0,
-        "Speculator": -0.09,
+        "Speculator": -0.01,
         "Value Investor": 0.0,
         "Emotional": -0.0
       },

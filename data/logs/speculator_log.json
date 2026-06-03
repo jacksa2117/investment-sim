@@ -43,5 +43,16 @@
     ],
     "portfolio_value": 9990.8,
     "return_pct": -0.09
+  },
+  {
+    "date": "2026-06-02",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "[CRYPTO 4h] evening (19:00). No signals. F&G=50, sentiment=+0.00. Crypto positions: ETH-USD(RSI=50). Monitoring..."
+      }
+    ],
+    "portfolio_value": 9998.72,
+    "return_pct": -0.01
   }
 ]
