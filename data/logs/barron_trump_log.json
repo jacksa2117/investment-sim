@@ -1,0 +1,49 @@
+[
+  {
+    "date": "2026-06-04",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "BTC-USD",
+        "shares": 0.0475,
+        "price": 63202.78,
+        "value": 3000.0,
+        "justification": "Initial portfolio. Barron classic: 30% in BTC-USD. Crypto heavy, AI exposure, and keeping it in the family (DJT)."
+      },
+      {
+        "action": "BUY",
+        "ticker": "ETH-USD",
+        "shares": 0.7984,
+        "price": 1753.4,
+        "value": 1400.0,
+        "justification": "Initial portfolio. Barron classic: 20% in ETH-USD. Crypto heavy, AI exposure, and keeping it in the family (DJT)."
+      },
+      {
+        "action": "BUY",
+        "ticker": "DOGE-USD",
+        "shares": 9589.0411,
+        "price": 0.09,
+        "value": 840.0,
+        "justification": "Initial portfolio. Barron classic: 15% in DOGE-USD. Crypto heavy, AI exposure, and keeping it in the family (DJT)."
+      },
+      {
+        "action": "BUY",
+        "ticker": "NVDA",
+        "shares": 2.1769,
+        "price": 218.66,
+        "value": 476.0,
+        "justification": "Initial portfolio. Barron classic: 10% in NVDA. Crypto heavy, AI exposure, and keeping it in the family (DJT)."
+      },
+      {
+        "action": "BUY",
+        "ticker": "SOL-USD",
+        "shares": 6.2871,
+        "price": 68.14,
+        "value": 428.4,
+        "justification": "Initial portfolio. Barron classic: 10% in SOL-USD. Crypto heavy, AI exposure, and keeping it in the family (DJT)."
+      }
+    ],
+    "portfolio_value": 9999.98,
+    "return_pct": -0.0
+  }
+]
