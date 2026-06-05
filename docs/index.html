@@ -182,7 +182,7 @@
   </div>
 </div>
 
-<script src="data.js" onerror="console.log('No data.js yet')"></script>
+<!-- data.js loaded dynamically with cache-busting -->
 <script>
 // ── Utilities ──────────────────────────────────────────────────────────────
 function fmtUSD(v) {
@@ -658,12 +658,22 @@ document.addEventListener('mouseout', e => {
   }, 5 * 60 * 1000);
 })();
 
-// ── Boot ─────────────────────────────────────────────────────────────────
-if (typeof SIMULATION_DATA !== 'undefined') {
-  render(SIMULATION_DATA);
-} else {
-  document.getElementById('last-updated').textContent = 'No data yet — run runner.py first';
-}
+// ── Boot: load data.js with cache-busting then render ────────────────────
+(function loadData() {
+  var s = document.createElement('script');
+  s.src = 'data.js?_=' + Date.now();
+  s.onload = function() {
+    if (typeof SIMULATION_DATA !== 'undefined') {
+      render(SIMULATION_DATA);
+    } else {
+      document.getElementById('last-updated').textContent = 'No data yet — run runner.py first';
+    }
+  };
+  s.onerror = function() {
+    document.getElementById('last-updated').textContent = 'No data yet — run runner.py first';
+  };
+  document.head.appendChild(s);
+})();
 </script>
 </body>
 </html>
