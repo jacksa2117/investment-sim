@@ -69,17 +69,17 @@
         "Conservative": 9895.5,
         "Passive Indexer": 9773.22,
         "Aggressive Growth": 9117.27,
-        "Speculator": 9429.31,
+        "Speculator": 9479.71,
         "Value Investor": 10182.58,
-        "Emotional": 9282.81
+        "Emotional": 9289.21
       },
       "returns": {
         "Conservative": -1.04,
         "Passive Indexer": -2.27,
         "Aggressive Growth": -8.83,
-        "Speculator": -5.71,
+        "Speculator": -5.2,
         "Value Investor": 1.83,
-        "Emotional": -7.17
+        "Emotional": -7.11
       },
       "fear_greed": 50.0
     }

@@ -90,5 +90,21 @@
     ],
     "portfolio_value": 9282.81,
     "return_pct": -7.17
+  },
+  {
+    "date": "2026-06-05",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "PLTR",
+        "shares": 32.0365,
+        "price": 135.53,
+        "value": 4341.91,
+        "pct_sold": 75,
+        "justification": "PANIC! Market COLLAPSING (-2.6% today)! I can't watch this anymore. SELLING 75% before it goes to zero! News sentiment: +0.00."
+      }
+    ],
+    "portfolio_value": 9289.21,
+    "return_pct": -7.11
   }
 ]
