@@ -45,5 +45,20 @@
     ],
     "portfolio_value": 9999.98,
     "return_pct": -0.0
+  },
+  {
+    "date": "2026-06-04",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "ETH-USD",
+        "shares": 0.3962,
+        "price": 1751.5,
+        "value": 694.01,
+        "justification": "RSI=18 oversold on ETH-USD. Classic dip buy. Trump sentiment: +0.00. F&G=50."
+      }
+    ],
+    "portfolio_value": 9992.69,
+    "return_pct": -0.07
   }
 ]
