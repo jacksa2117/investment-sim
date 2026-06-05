@@ -1,0 +1,49 @@
+﻿name: Run Investment Simulation
+
+on:
+  schedule:
+    # Morning run — 9:30 AM ET (14:30 UTC), Mon-Fri
+    - cron: '30 14 * * 1-5'
+    # Afternoon run — 3:45 PM ET (20:45 UTC), Mon-Fri
+    - cron: '45 20 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine run mode
+        id: mode
+        run: |
+          HOUR=$(date -u +%H)
+          TIME=$((HOUR * 60 + $(date -u +%M)))
+          if [ $TIME -ge 870 ] && [ $TIME -lt 1200 ]; then
+            echo "mode=morning" >> $GITHUB_OUTPUT
+          else
+            echo "mode=afternoon" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run simulation
+        run: python runner.py --mode ${{ steps.mode.outputs.mode }}
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data.js data/
+          git diff --cached --quiet || git commit -m "chore: auto-update simulation data [skip ci]"
+          git push
