@@ -25,6 +25,7 @@ from agents.aggressive_growth import AggressiveGrowthAgent
 from agents.speculator import SpeculatorAgent
 from agents.value_investor import ValueInvestorAgent
 from agents.emotional import EmotionalInvestorAgent
+from agents.barron_trump import BarronTrumpAgent
 from data.market_data import fetch_market_data, fetch_crypto_data, fetch_fear_greed
 from data.news_sentiment import fetch_all_sentiment
 
@@ -38,13 +39,14 @@ AGENT_META = {
     "Speculator":        {"color": "#E53935", "emoji": "🎰", "strategy": "Crypto, meme stocks, momentum chasing."},
     "Value Investor":    {"color": "#7B1FA2", "emoji": "📖", "strategy": "Buffett-style. Undervalued fundamentals. Low turnover."},
     "Emotional":         {"color": "#FDD835", "emoji": "😱", "strategy": "No strategy. FOMO buys, panic sells."},
+    "Barron Trump":      {"color": "#FFD700", "emoji": "🤴", "strategy": "Crypto-heavy, meme coins, DJT, AI. Gen Z meets Mar-a-Lago."},
 }
 
 # Which agents run in each mode
 MODE_AGENTS = {
     "morning":   ["Conservative", "Passive Indexer", "Aggressive Growth",
-                  "Speculator", "Value Investor", "Emotional"],
-    "afternoon": ["Speculator", "Emotional"],
+                  "Speculator", "Value Investor", "Emotional", "Barron Trump"],
+    "afternoon": ["Speculator", "Emotional", "Barron Trump"],
     "crypto":    ["Speculator"],
 }
 
@@ -183,7 +185,7 @@ def print_summary(agents):
     print(f"{'─'*62}")
     for i, agent in enumerate(sorted(agents, key=lambda a: a.portfolio["total_value"], reverse=True)):
         p     = agent.portfolio
-        medal = ["🥇", "🥈", "🥉", " 4.", " 5.", " 6."][min(i, 5)]
+        medal = ["🥇", "🥈", "🥉", " 4.", " 5.", " 6.", " 7."][min(i, 6)]
         print(f"  {medal} {agent.name:<20} ${p['total_value']:>9,.2f}"
               f"  {p['return_pct']:>+7.2f}%  {p.get('max_drawdown',0):>6.1f}%")
     print(f"{'─'*62}\n")
@@ -199,6 +201,7 @@ def make_agents(names: list) -> list:
         "Speculator":        SpeculatorAgent,
         "Value Investor":    ValueInvestorAgent,
         "Emotional":         EmotionalInvestorAgent,
+        "Barron Trump":      BarronTrumpAgent,
     }
     return [registry[n]() for n in names if n in registry]
 
