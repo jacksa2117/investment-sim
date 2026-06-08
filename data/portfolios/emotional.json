@@ -1,20 +1,27 @@
 {
   "agent_name": "Emotional",
   "starting_capital": 10000,
-  "cash": 7841.91,
+  "cash": 6641.91,
   "holdings": {
     "PLTR": {
       "shares": 10.678846,
       "avg_cost": 152.17,
-      "current_price": 135.53,
-      "current_value": 1447.3,
-      "unrealized_pnl_pct": -10.94
+      "current_price": 135.79,
+      "current_value": 1450.08,
+      "unrealized_pnl_pct": -10.76
+    },
+    "COIN": {
+      "shares": 7.378259,
+      "avg_cost": 162.64,
+      "current_price": 162.64,
+      "current_value": 1200.0,
+      "unrealized_pnl_pct": 0.0
     }
   },
-  "total_value": 9289.21,
-  "return_pct": -7.11,
+  "total_value": 9291.99,
+  "return_pct": -7.08,
   "peak_value": 10000,
   "max_drawdown": 7.17,
-  "last_updated": "2026-06-05",
-  "trade_count": 2
+  "last_updated": "2026-06-08",
+  "trade_count": 3
 }

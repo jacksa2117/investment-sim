@@ -106,5 +106,20 @@
     ],
     "portfolio_value": 9289.21,
     "return_pct": -7.11
+  },
+  {
+    "date": "2026-06-08",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "COIN",
+        "shares": 7.3783,
+        "price": 162.64,
+        "value": 1200.0,
+        "justification": "Market's green today (+0.7%). COIN up 6.7%! '' \u2014 this sounds huge. Buying while it's still moving."
+      }
+    ],
+    "portfolio_value": 9291.99,
+    "return_pct": -7.08
   }
 ]
