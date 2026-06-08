@@ -86,20 +86,22 @@
     {
       "date": "2026-06-08",
       "values": {
-        "Conservative": 9901.13,
-        "Passive Indexer": 9800.01,
-        "Aggressive Growth": 9134.16,
-        "Speculator": 9653.62,
-        "Value Investor": 10177.08,
-        "Emotional": 9282.8
+        "Conservative": 9903.24,
+        "Passive Indexer": 9812.33,
+        "Aggressive Growth": 9151.1,
+        "Speculator": 9670.53,
+        "Value Investor": 10178.62,
+        "Emotional": 9287.85,
+        "Barron Trump": 9900.79
       },
       "returns": {
-        "Conservative": -0.99,
-        "Passive Indexer": -2.0,
-        "Aggressive Growth": -8.66,
-        "Speculator": -3.46,
-        "Value Investor": 1.77,
-        "Emotional": -7.17
+        "Conservative": -0.97,
+        "Passive Indexer": -1.88,
+        "Aggressive Growth": -8.49,
+        "Speculator": -3.29,
+        "Value Investor": 1.79,
+        "Emotional": -7.12,
+        "Barron Trump": -0.99
       },
       "fear_greed": 50.0
     }
