@@ -6,43 +6,43 @@
     "BTC-USD": {
       "shares": 0.047466,
       "avg_cost": 63202.7812,
-      "current_price": 63602.2383,
-      "current_value": 3018.94,
-      "unrealized_pnl_pct": 0.63
+      "current_price": 63402.8398,
+      "current_value": 3009.48,
+      "unrealized_pnl_pct": 0.32
     },
     "ETH-USD": {
       "shares": 1.532286,
       "avg_cost": 1737.9883,
-      "current_price": 1685.6801,
-      "current_value": 2582.94,
-      "unrealized_pnl_pct": -3.01
+      "current_price": 1681.84,
+      "current_value": 2577.06,
+      "unrealized_pnl_pct": -3.23
     },
     "DOGE-USD": {
       "shares": 9589.041096,
       "avg_cost": 0.0876,
-      "current_price": 0.0866,
-      "current_value": 830.41,
-      "unrealized_pnl_pct": -1.14
+      "current_price": 0.0864,
+      "current_value": 828.49,
+      "unrealized_pnl_pct": -1.37
     },
     "NVDA": {
       "shares": 2.176896,
       "avg_cost": 218.66,
-      "current_price": 208.61,
-      "current_value": 454.12,
-      "unrealized_pnl_pct": -4.6
+      "current_price": 208.35,
+      "current_value": 453.56,
+      "unrealized_pnl_pct": -4.72
     },
     "SOL-USD": {
       "shares": 6.287056,
       "avg_cost": 68.14,
-      "current_price": 67.1,
-      "current_value": 421.86,
-      "unrealized_pnl_pct": -1.53
+      "current_price": 66.84,
+      "current_value": 420.23,
+      "unrealized_pnl_pct": -1.91
     }
   },
-  "total_value": 9900.79,
-  "return_pct": -0.99,
+  "total_value": 9881.32,
+  "return_pct": -1.19,
   "peak_value": 10000,
-  "max_drawdown": 0.99,
+  "max_drawdown": 1.19,
   "last_updated": "2026-06-08",
   "trade_count": 7
 }
