@@ -139,5 +139,20 @@
     ],
     "portfolio_value": 9665.92,
     "return_pct": -3.34
+  },
+  {
+    "date": "2026-06-08",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "BTC-USD",
+        "shares": 0.0143,
+        "price": 63416.66,
+        "value": 906.22,
+        "justification": "RSI=27 oversold bounce on BTC-USD. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 9653.62,
+    "return_pct": -3.46
   }
 ]

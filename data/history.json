@@ -86,20 +86,20 @@
     {
       "date": "2026-06-08",
       "values": {
-        "Conservative": 9909.1,
-        "Passive Indexer": 9820.12,
-        "Aggressive Growth": 9152.54,
-        "Speculator": 9665.92,
-        "Value Investor": 10189.53,
-        "Emotional": 9291.99
+        "Conservative": 9901.13,
+        "Passive Indexer": 9800.01,
+        "Aggressive Growth": 9134.16,
+        "Speculator": 9653.62,
+        "Value Investor": 10177.08,
+        "Emotional": 9282.8
       },
       "returns": {
-        "Conservative": -0.91,
-        "Passive Indexer": -1.8,
-        "Aggressive Growth": -8.47,
-        "Speculator": -3.34,
-        "Value Investor": 1.9,
-        "Emotional": -7.08
+        "Conservative": -0.99,
+        "Passive Indexer": -2.0,
+        "Aggressive Growth": -8.66,
+        "Speculator": -3.46,
+        "Value Investor": 1.77,
+        "Emotional": -7.17
       },
       "fear_greed": 50.0
     }

@@ -1,27 +1,27 @@
 {
   "agent_name": "Speculator",
   "starting_capital": 10000,
-  "cash": 5034.538,
+  "cash": 4128.3212,
   "holdings": {
     "ETH-USD": {
       "shares": 1.610077,
       "avg_cost": 1862.7229,
-      "current_price": 1685.7,
-      "current_value": 2714.11,
-      "unrealized_pnl_pct": -9.5
+      "current_price": 1680.3,
+      "current_value": 2705.41,
+      "unrealized_pnl_pct": -9.79
     },
     "BTC-USD": {
-      "shares": 0.030176,
-      "avg_cost": 65162.6168,
-      "current_price": 63536.5781,
-      "current_value": 1917.28,
-      "unrealized_pnl_pct": -2.5
+      "shares": 0.044466,
+      "avg_cost": 64601.5233,
+      "current_price": 63416.6602,
+      "current_value": 2819.89,
+      "unrealized_pnl_pct": -1.83
     }
   },
-  "total_value": 9665.92,
-  "return_pct": -3.34,
+  "total_value": 9653.62,
+  "return_pct": -3.46,
   "peak_value": 10000.46,
   "max_drawdown": 5.71,
   "last_updated": "2026-06-08",
-  "trade_count": 5
+  "trade_count": 6
 }

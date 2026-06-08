@@ -13,27 +13,27 @@
     "GLD": {
       "shares": 4.854958,
       "avg_cost": 411.95,
-      "current_price": 398.36,
-      "current_value": 1934.02,
-      "unrealized_pnl_pct": -3.3
+      "current_price": 398.231,
+      "current_value": 1933.39,
+      "unrealized_pnl_pct": -3.33
     },
     "SCHD": {
       "shares": 77.232005,
       "avg_cost": 32.37,
-      "current_price": 32.365,
-      "current_value": 2499.61,
-      "unrealized_pnl_pct": -0.02
+      "current_price": 32.3,
+      "current_value": 2494.59,
+      "unrealized_pnl_pct": -0.22
     },
     "VIG": {
       "shares": 4.238366,
       "avg_cost": 235.94,
-      "current_price": 234.27,
-      "current_value": 992.92,
-      "unrealized_pnl_pct": -0.71
+      "current_price": 233.7199,
+      "current_value": 990.59,
+      "unrealized_pnl_pct": -0.94
     }
   },
-  "total_value": 9909.1,
-  "return_pct": -0.91,
+  "total_value": 9901.13,
+  "return_pct": -0.99,
   "peak_value": 10014.19,
   "max_drawdown": 1.19,
   "last_updated": "2026-06-08",
