@@ -6,22 +6,22 @@
     "ETH-USD": {
       "shares": 1.610077,
       "avg_cost": 1862.7229,
-      "current_price": 1650.62,
-      "current_value": 2657.63,
-      "unrealized_pnl_pct": -11.39
+      "current_price": 1621.84,
+      "current_value": 2611.29,
+      "unrealized_pnl_pct": -12.93
     },
     "BTC-USD": {
       "shares": 0.044466,
       "avg_cost": 64601.5233,
-      "current_price": 61787.3203,
-      "current_value": 2747.43,
-      "unrealized_pnl_pct": -4.36
+      "current_price": 61606.6289,
+      "current_value": 2739.4,
+      "unrealized_pnl_pct": -4.64
     }
   },
-  "total_value": 9533.38,
-  "return_pct": -4.67,
+  "total_value": 9479.01,
+  "return_pct": -5.21,
   "peak_value": 10000.46,
   "max_drawdown": 5.71,
-  "last_updated": "2026-06-09",
+  "last_updated": "2026-06-10",
   "trade_count": 6
 }
