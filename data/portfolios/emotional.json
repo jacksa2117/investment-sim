@@ -6,20 +6,20 @@
     "PLTR": {
       "shares": 10.678846,
       "avg_cost": 152.17,
-      "current_price": 131.39,
-      "current_value": 1403.09,
-      "unrealized_pnl_pct": -13.66
+      "current_price": 130.21,
+      "current_value": 1390.49,
+      "unrealized_pnl_pct": -14.43
     },
     "COIN": {
       "shares": 7.378259,
       "avg_cost": 162.64,
-      "current_price": 155.31,
-      "current_value": 1145.92,
-      "unrealized_pnl_pct": -4.51
+      "current_price": 153.97,
+      "current_value": 1136.03,
+      "unrealized_pnl_pct": -5.33
     }
   },
-  "total_value": 9190.92,
-  "return_pct": -8.09,
+  "total_value": 9168.43,
+  "return_pct": -8.32,
   "peak_value": 10000,
   "max_drawdown": 8.47,
   "last_updated": "2026-06-10",
