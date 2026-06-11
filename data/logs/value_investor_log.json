@@ -161,5 +161,16 @@
     ],
     "portfolio_value": 10197.47,
     "return_pct": 1.97
+  },
+  {
+    "date": "2026-06-11",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Already analyzed fundamentals this week \u2014 checking again next week. Low turnover is a feature. Reddit buzzing about: nothing \u2014 IGNORED. Portfolio: $10,214.00."
+      }
+    ],
+    "portfolio_value": 10214.0,
+    "return_pct": 2.14
   }
 ]

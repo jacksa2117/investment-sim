@@ -209,5 +209,20 @@
     ],
     "portfolio_value": 9168.43,
     "return_pct": -8.32
+  },
+  {
+    "date": "2026-06-11",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "AMD",
+        "shares": 2.5241,
+        "price": 473.64,
+        "value": 1195.54,
+        "justification": "Market's green today (+1.1%). AMD up 4.7%! '' \u2014 this sounds huge. Buying while it's still moving."
+      }
+    ],
+    "portfolio_value": 9197.7,
+    "return_pct": -8.02
   }
 ]
