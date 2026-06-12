@@ -180,5 +180,16 @@
     ],
     "portfolio_value": 9855.38,
     "return_pct": -1.45
+  },
+  {
+    "date": "2026-06-12",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "All positions within 4% of targets. Macro: No macro headlines today. F&G=50. Latest SPY headline: ''. Conservative strategy: ignore noise, stay the course."
+      }
+    ],
+    "portfolio_value": 9921.21,
+    "return_pct": -0.79
   }
 ]

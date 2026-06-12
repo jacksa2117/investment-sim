@@ -1,34 +1,34 @@
 {
   "agent_name": "Emotional",
   "starting_capital": 10000,
-  "cash": 2995.5014,
+  "cash": 2456.3111,
   "holdings": {
     "PLTR": {
       "shares": 10.678846,
       "avg_cost": 152.17,
-      "current_price": 131.08,
-      "current_value": 1399.78,
-      "unrealized_pnl_pct": -13.86
+      "current_price": 128.175,
+      "current_value": 1368.76,
+      "unrealized_pnl_pct": -15.77
     },
     "COIN": {
       "shares": 22.655107,
       "avg_cost": 161.1497,
-      "current_price": 160.43,
-      "current_value": 3634.56,
-      "unrealized_pnl_pct": -0.45
+      "current_price": 159.69,
+      "current_value": 3617.79,
+      "unrealized_pnl_pct": -0.91
     },
     "AMD": {
-      "shares": 2.524135,
-      "avg_cost": 473.645,
-      "current_price": 488.45,
-      "current_value": 1232.91,
-      "unrealized_pnl_pct": 3.13
+      "shares": 3.56629,
+      "avg_cost": 486.4254,
+      "current_price": 517.38,
+      "current_value": 1845.13,
+      "unrealized_pnl_pct": 6.36
     }
   },
-  "total_value": 9262.76,
-  "return_pct": -7.37,
+  "total_value": 9287.99,
+  "return_pct": -7.12,
   "peak_value": 10000,
   "max_drawdown": 8.47,
-  "last_updated": "2026-06-11",
-  "trade_count": 5
+  "last_updated": "2026-06-12",
+  "trade_count": 6
 }
