@@ -265,5 +265,20 @@
     ],
     "portfolio_value": 9267.34,
     "return_pct": -7.33
+  },
+  {
+    "date": "2026-06-15",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "AMD",
+        "shares": 2.0162,
+        "price": 548.24,
+        "value": 1105.34,
+        "justification": "Market PUMPING (1.8% today)! I HAVE to buy AMD right now before it goes parabolic! 1W return: 11.8%."
+      }
+    ],
+    "portfolio_value": 9710.09,
+    "return_pct": -2.9
   }
 ]
