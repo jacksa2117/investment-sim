@@ -221,5 +221,16 @@
     ],
     "portfolio_value": 9194.0,
     "return_pct": -8.06
+  },
+  {
+    "date": "2026-06-17",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Holding top-5: PLTR, NVDA, AMD, META, CRWD. Overall sentiment: +0.00. Next rebalance: end of June. Portfolio: $9,207.58."
+      }
+    ],
+    "portfolio_value": 9207.58,
+    "return_pct": -7.92
   }
 ]
