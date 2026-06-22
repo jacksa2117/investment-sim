@@ -295,5 +295,16 @@
     ],
     "portfolio_value": 9880.1,
     "return_pct": -1.2
+  },
+  {
+    "date": "2026-06-22",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Chilling. F&G=50. Trump news: +0.00. Top positions: BTC-USD(+2.1%), ETH-USD(+0.1%), DOGE-USD(-5.1%), SOL-USD(+7.5%). Cash: $2,593. Waiting for the next meme catalyst."
+      }
+    ],
+    "portfolio_value": 10034.11,
+    "return_pct": 0.34
   }
 ]

@@ -280,6 +280,28 @@
         "Barron Trump": -1.2
       },
       "fear_greed": 50.0
+    },
+    {
+      "date": "2026-06-22",
+      "values": {
+        "Conservative": 9828.2,
+        "Passive Indexer": 9860.34,
+        "Aggressive Growth": 8891.52,
+        "Speculator": 9799.36,
+        "Value Investor": 10417.03,
+        "Emotional": 9456.9,
+        "Barron Trump": 10034.11
+      },
+      "returns": {
+        "Conservative": -1.72,
+        "Passive Indexer": -1.4,
+        "Aggressive Growth": -11.08,
+        "Speculator": -2.01,
+        "Value Investor": 4.17,
+        "Emotional": -5.43,
+        "Barron Trump": 0.34
+      },
+      "fear_greed": 50.0
     }
   ]
 }
