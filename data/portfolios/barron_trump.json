@@ -1,48 +1,48 @@
 {
   "agent_name": "Barron Trump",
   "starting_capital": 10000,
-  "cash": 2592.5054,
+  "cash": 2125.8544,
   "holdings": {
     "BTC-USD": {
       "shares": 0.047466,
       "avg_cost": 63202.7812,
-      "current_price": 64122.7188,
-      "current_value": 3043.65,
-      "unrealized_pnl_pct": 1.46
+      "current_price": 62443.9883,
+      "current_value": 2963.97,
+      "unrealized_pnl_pct": -1.2
     },
     "ETH-USD": {
       "shares": 1.532286,
       "avg_cost": 1737.9883,
-      "current_price": 1726.89,
-      "current_value": 2646.09,
-      "unrealized_pnl_pct": -0.64
+      "current_price": 1657.04,
+      "current_value": 2539.06,
+      "unrealized_pnl_pct": -4.66
     },
     "DOGE-USD": {
-      "shares": 9589.041096,
-      "avg_cost": 0.0876,
-      "current_price": 0.0825,
-      "current_value": 791.1,
-      "unrealized_pnl_pct": -5.82
+      "shares": 15511.007746,
+      "avg_cost": 0.0842,
+      "current_price": 0.0788,
+      "current_value": 1222.27,
+      "unrealized_pnl_pct": -6.41
     },
     "NVDA": {
       "shares": 2.176896,
       "avg_cost": 218.66,
-      "current_price": 208.65,
-      "current_value": 454.21,
-      "unrealized_pnl_pct": -4.58
+      "current_price": 202.27,
+      "current_value": 440.32,
+      "unrealized_pnl_pct": -7.5
     },
     "SOL-USD": {
       "shares": 6.287056,
       "avg_cost": 68.14,
-      "current_price": 72.38,
-      "current_value": 455.06,
-      "unrealized_pnl_pct": 6.22
+      "current_price": 68.76,
+      "current_value": 432.3,
+      "unrealized_pnl_pct": 0.91
     }
   },
-  "total_value": 9982.61,
-  "return_pct": -0.17,
+  "total_value": 9723.77,
+  "return_pct": -2.76,
   "peak_value": 10369.49,
-  "max_drawdown": 5.38,
-  "last_updated": "2026-06-22",
-  "trade_count": 7
+  "max_drawdown": 6.23,
+  "last_updated": "2026-06-23",
+  "trade_count": 8
 }

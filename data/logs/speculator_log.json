@@ -407,5 +407,20 @@
     ],
     "portfolio_value": 9760.03,
     "return_pct": -2.4
+  },
+  {
+    "date": "2026-06-23",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "DOGE-USD",
+        "shares": 9430.1753,
+        "price": 0.08,
+        "value": 743.1,
+        "justification": "RSI=27 oversold bounce on DOGE-USD. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 9572.92,
+    "return_pct": -4.27
   }
 ]
