@@ -1,34 +1,34 @@
 {
   "agent_name": "Speculator",
   "starting_capital": 10000,
-  "cash": 2775.8832,
+  "cash": 2276.2242,
   "holdings": {
     "ETH-USD": {
       "shares": 1.610077,
       "avg_cost": 1862.7229,
-      "current_price": 1665.9301,
-      "current_value": 2682.28,
-      "unrealized_pnl_pct": -10.56
+      "current_price": 1623.26,
+      "current_value": 2613.57,
+      "unrealized_pnl_pct": -12.86
     },
     "BTC-USD": {
       "shares": 0.044466,
       "avg_cost": 64601.5233,
-      "current_price": 62566.2891,
-      "current_value": 2782.07,
-      "unrealized_pnl_pct": -3.15
+      "current_price": 60289.2188,
+      "current_value": 2680.82,
+      "unrealized_pnl_pct": -6.68
     },
     "DOGE-USD": {
-      "shares": 17172.744733,
-      "avg_cost": 0.0788,
-      "current_price": 0.0787,
-      "current_value": 1351.5,
-      "unrealized_pnl_pct": -0.13
+      "shares": 23817.14601,
+      "avg_cost": 0.0778,
+      "current_price": 0.0752,
+      "current_value": 1791.05,
+      "unrealized_pnl_pct": -3.34
     }
   },
-  "total_value": 9591.73,
-  "return_pct": -4.08,
+  "total_value": 9361.67,
+  "return_pct": -6.38,
   "peak_value": 10052.34,
-  "max_drawdown": 5.71,
-  "last_updated": "2026-06-23",
-  "trade_count": 8
+  "max_drawdown": 6.87,
+  "last_updated": "2026-06-24",
+  "trade_count": 9
 }
