@@ -500,5 +500,20 @@
     ],
     "portfolio_value": 9264.14,
     "return_pct": -7.36
+  },
+  {
+    "date": "2026-06-26",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "MSTR",
+        "shares": 4.0818,
+        "price": 82.31,
+        "value": 335.97,
+        "justification": "RSI=24 oversold bounce on MSTR. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 9265.19,
+    "return_pct": -7.35
   }
 ]
