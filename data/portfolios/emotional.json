@@ -1,34 +1,41 @@
 {
   "agent_name": "Emotional",
   "starting_capital": 10000,
-  "cash": 499.6162,
+  "cash": 274.7889,
   "holdings": {
     "PLTR": {
       "shares": 10.678846,
       "avg_cost": 152.17,
-      "current_price": 112.93,
-      "current_value": 1205.96,
-      "unrealized_pnl_pct": -25.79
+      "current_price": 116.31,
+      "current_value": 1242.06,
+      "unrealized_pnl_pct": -23.57
     },
     "COIN": {
       "shares": 22.655107,
       "avg_cost": 161.1497,
-      "current_price": 149.06,
-      "current_value": 3376.97,
-      "unrealized_pnl_pct": -7.5
+      "current_price": 150.65,
+      "current_value": 3412.99,
+      "unrealized_pnl_pct": -6.52
     },
     "AMD": {
       "shares": 7.147929,
       "avg_cost": 516.4334,
-      "current_price": 521.58,
-      "current_value": 3728.22,
-      "unrealized_pnl_pct": 1.0
+      "current_price": 536.4999,
+      "current_value": 3834.86,
+      "unrealized_pnl_pct": 3.89
+    },
+    "TSLA": {
+      "shares": 0.552931,
+      "avg_cost": 406.61,
+      "current_price": 406.61,
+      "current_value": 224.83,
+      "unrealized_pnl_pct": 0.0
     }
   },
-  "total_value": 8810.77,
-  "return_pct": -11.89,
+  "total_value": 8989.53,
+  "return_pct": -10.1,
   "peak_value": 10000,
   "max_drawdown": 13.21,
-  "last_updated": "2026-06-26",
-  "trade_count": 10
+  "last_updated": "2026-06-29",
+  "trade_count": 11
 }

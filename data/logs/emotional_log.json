@@ -501,5 +501,20 @@
     ],
     "portfolio_value": 8810.77,
     "return_pct": -11.89
+  },
+  {
+    "date": "2026-06-29",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "TSLA",
+        "shares": 0.5529,
+        "price": 406.61,
+        "value": 224.83,
+        "justification": "Market PUMPING (1.5% today)! I HAVE to buy TSLA right now before it goes parabolic! 1W return: 0.4%."
+      }
+    ],
+    "portfolio_value": 8989.53,
+    "return_pct": -10.1
   }
 ]
