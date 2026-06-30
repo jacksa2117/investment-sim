@@ -6,30 +6,30 @@
     "BRK-B": {
       "shares": 4.241692,
       "avg_cost": 471.51,
-      "current_price": 496.065,
-      "current_value": 2104.15,
-      "unrealized_pnl_pct": 5.21
+      "current_price": 496.645,
+      "current_value": 2106.62,
+      "unrealized_pnl_pct": 5.33
     },
     "JPM": {
       "shares": 6.645401,
       "avg_cost": 300.96,
-      "current_price": 331.1,
-      "current_value": 2200.29,
-      "unrealized_pnl_pct": 10.01
+      "current_price": 329.13,
+      "current_value": 2187.2,
+      "unrealized_pnl_pct": 9.36
     },
     "BAC": {
       "shares": 28.582317,
       "avg_cost": 52.48,
-      "current_price": 58.17,
-      "current_value": 1662.63,
-      "unrealized_pnl_pct": 10.84
+      "current_price": 57.2619,
+      "current_value": 1636.68,
+      "unrealized_pnl_pct": 9.11
     }
   },
-  "total_value": 10467.08,
-  "return_pct": 4.67,
+  "total_value": 10430.49,
+  "return_pct": 4.3,
   "peak_value": 10482.14,
   "max_drawdown": 1.08,
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-06-30",
   "trade_count": 3,
   "last_check_week": "2026-26"
 }
