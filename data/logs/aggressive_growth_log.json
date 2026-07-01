@@ -331,5 +331,37 @@
     ],
     "portfolio_value": 9237.27,
     "return_pct": -7.63
+  },
+  {
+    "date": "2026-07-01",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "SHOP",
+        "shares": 16.2379,
+        "price": 122.56,
+        "value": 1990.12,
+        "pct_sold": 100,
+        "justification": "SHOP rotated out of top 5. Sentiment: no signal. Reallocating to higher-conviction names."
+      },
+      {
+        "action": "BUY",
+        "ticker": "PLTR",
+        "shares": 1.8196,
+        "price": 127.26,
+        "value": 231.56,
+        "justification": "Top-5 growth pick: PLTR. 85% YoY revenue growth. Sentiment: news=+0.00(''). Tolerates 30%+ drawdowns for asymmetric upside."
+      },
+      {
+        "action": "BUY",
+        "ticker": "META",
+        "shares": 2.9463,
+        "price": 617.91,
+        "value": 1820.53,
+        "justification": "Top-5 growth pick: META. 33% YoY revenue growth. Sentiment: news=+0.00(''). Tolerates 30%+ drawdowns for asymmetric upside."
+      }
+    ],
+    "portfolio_value": 9581.74,
+    "return_pct": -4.18
   }
 ]
