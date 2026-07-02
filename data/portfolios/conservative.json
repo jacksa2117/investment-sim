@@ -6,36 +6,36 @@
     "BND": {
       "shares": 47.814208,
       "avg_cost": 73.2,
-      "current_price": 73.095,
-      "current_value": 3494.98,
-      "unrealized_pnl_pct": -0.14
+      "current_price": 73.105,
+      "current_value": 3495.46,
+      "unrealized_pnl_pct": -0.13
     },
     "GLD": {
       "shares": 4.854958,
       "avg_cost": 411.95,
-      "current_price": 373.755,
-      "current_value": 1814.56,
-      "unrealized_pnl_pct": -9.27
+      "current_price": 378.38,
+      "current_value": 1837.02,
+      "unrealized_pnl_pct": -8.15
     },
     "SCHD": {
       "shares": 77.232005,
       "avg_cost": 32.37,
-      "current_price": 31.985,
-      "current_value": 2470.27,
-      "unrealized_pnl_pct": -1.19
+      "current_price": 32.175,
+      "current_value": 2484.94,
+      "unrealized_pnl_pct": -0.6
     },
     "VIG": {
       "shares": 4.238366,
       "avg_cost": 235.94,
-      "current_price": 237.16,
-      "current_value": 1005.17,
-      "unrealized_pnl_pct": 0.52
+      "current_price": 237.8967,
+      "current_value": 1008.29,
+      "unrealized_pnl_pct": 0.83
     }
   },
-  "total_value": 9784.98,
-  "return_pct": -2.15,
+  "total_value": 9825.71,
+  "return_pct": -1.74,
   "peak_value": 10014.19,
   "max_drawdown": 2.55,
-  "last_updated": "2026-07-01",
+  "last_updated": "2026-07-02",
   "trade_count": 4
 }
