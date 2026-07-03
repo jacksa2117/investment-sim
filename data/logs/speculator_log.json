@@ -614,5 +614,16 @@
     ],
     "portfolio_value": 9710.19,
     "return_pct": -2.9
+  },
+  {
+    "date": "2026-07-03",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "No clear entry/exit. F&G=50 (Neutral). Crypto sent: +0.00. WSB buzz: quiet. Top positions: ETH-USD(-5.5%), BTC-USD(-3.1%), DOGE-USD(+0.4%). Cash: $1,531."
+      }
+    ],
+    "portfolio_value": 9829.84,
+    "return_pct": -1.7
   }
 ]
