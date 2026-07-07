@@ -411,5 +411,21 @@
     ],
     "portfolio_value": 8170.77,
     "return_pct": -18.29
+  },
+  {
+    "date": "2026-07-07",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "CRWD",
+        "shares": 0.1544,
+        "price": 199.07,
+        "value": 30.74,
+        "pct_sold": 50,
+        "justification": "Stop-loss: CRWD down 74.1%. News: news=+0.00(''). Cutting half to preserve capital."
+      }
+    ],
+    "portfolio_value": 8316.93,
+    "return_pct": -16.83
   }
 ]

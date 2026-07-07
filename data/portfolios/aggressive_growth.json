@@ -1,49 +1,49 @@
 {
   "agent_name": "Aggressive Growth",
   "starting_capital": 10000,
-  "cash": 860.8816,
+  "cash": 891.6216,
   "holdings": {
     "PLTR": {
       "shares": 14.3056,
       "avg_cost": 149.0016,
-      "current_price": 132.92,
-      "current_value": 1901.5,
-      "unrealized_pnl_pct": -10.79
+      "current_price": 137.135,
+      "current_value": 1961.8,
+      "unrealized_pnl_pct": -7.96
     },
     "NVDA": {
       "shares": 8.527062,
       "avg_cost": 222.82,
-      "current_price": 196.01,
-      "current_value": 1671.39,
-      "unrealized_pnl_pct": -12.03
+      "current_price": 196.855,
+      "current_value": 1678.59,
+      "unrealized_pnl_pct": -11.65
     },
     "SNOW": {
       "shares": 7.275791,
       "avg_cost": 261.14,
-      "current_price": 264.1518,
-      "current_value": 1921.91,
-      "unrealized_pnl_pct": 1.15
+      "current_price": 269.7751,
+      "current_value": 1962.83,
+      "unrealized_pnl_pct": 3.31
     },
     "CRWD": {
-      "shares": 0.308863,
+      "shares": 0.154431,
       "avg_cost": 768.95,
-      "current_price": 201.1039,
-      "current_value": 62.11,
-      "unrealized_pnl_pct": -73.85
+      "current_price": 199.07,
+      "current_value": 30.74,
+      "unrealized_pnl_pct": -74.11
     },
     "META": {
       "shares": 2.946271,
       "avg_cost": 617.91,
-      "current_price": 594.9799,
-      "current_value": 1752.97,
-      "unrealized_pnl_pct": -3.71
+      "current_price": 608.005,
+      "current_value": 1791.35,
+      "unrealized_pnl_pct": -1.6
     }
   },
-  "total_value": 8170.77,
-  "return_pct": -18.29,
+  "total_value": 8316.93,
+  "return_pct": -16.83,
   "peak_value": 10000.0,
   "max_drawdown": 19.6,
-  "last_updated": "2026-07-06",
-  "trade_count": 11,
+  "last_updated": "2026-07-07",
+  "trade_count": 12,
   "last_rebalance_month": "2026-07"
 }
