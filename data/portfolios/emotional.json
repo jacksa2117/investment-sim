@@ -6,36 +6,36 @@
     "PLTR": {
       "shares": 10.678846,
       "avg_cost": 152.17,
-      "current_price": 134.37,
-      "current_value": 1434.92,
-      "unrealized_pnl_pct": -11.7
+      "current_price": 129.02,
+      "current_value": 1377.78,
+      "unrealized_pnl_pct": -15.21
     },
     "COIN": {
       "shares": 22.655107,
       "avg_cost": 161.1497,
-      "current_price": 163.51,
-      "current_value": 3704.34,
-      "unrealized_pnl_pct": 1.46
+      "current_price": 160.195,
+      "current_value": 3629.23,
+      "unrealized_pnl_pct": -0.59
     },
     "AMD": {
       "shares": 7.147929,
       "avg_cost": 516.4334,
-      "current_price": 516.11,
-      "current_value": 3689.12,
-      "unrealized_pnl_pct": -0.06
+      "current_price": 507.79,
+      "current_value": 3629.65,
+      "unrealized_pnl_pct": -1.67
     },
     "TSLA": {
       "shares": 0.853181,
       "avg_cost": 408.4505,
-      "current_price": 402.9,
-      "current_value": 343.75,
-      "unrealized_pnl_pct": -1.36
+      "current_price": 393.995,
+      "current_value": 336.15,
+      "unrealized_pnl_pct": -3.54
     }
   },
-  "total_value": 9323.25,
-  "return_pct": -6.77,
+  "total_value": 9123.95,
+  "return_pct": -8.76,
   "peak_value": 10000,
   "max_drawdown": 13.21,
-  "last_updated": "2026-07-07",
+  "last_updated": "2026-07-08",
   "trade_count": 12
 }
