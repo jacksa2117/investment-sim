@@ -705,19 +705,19 @@
         "Conservative": 9838.39,
         "Passive Indexer": 9852.43,
         "Aggressive Growth": 8340.12,
-        "Speculator": 9768.78,
+        "Speculator": 9852.33,
         "Value Investor": 10653.74,
-        "Emotional": 8980.16,
-        "Barron Trump": 9909.82
+        "Emotional": 8992.95,
+        "Barron Trump": 9992.02
       },
       "returns": {
         "Conservative": -1.62,
         "Passive Indexer": -1.48,
         "Aggressive Growth": -16.6,
-        "Speculator": -2.31,
+        "Speculator": -1.48,
         "Value Investor": 6.54,
-        "Emotional": -10.2,
-        "Barron Trump": -0.9
+        "Emotional": -10.07,
+        "Barron Trump": -0.08
       },
       "fear_greed": 50.0
     }

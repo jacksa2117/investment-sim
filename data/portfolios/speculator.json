@@ -6,34 +6,34 @@
     "ETH-USD": {
       "shares": 1.610077,
       "avg_cost": 1862.7229,
-      "current_price": 1826.65,
-      "current_value": 2941.05,
-      "unrealized_pnl_pct": -1.94
+      "current_price": 1840.97,
+      "current_value": 2964.1,
+      "unrealized_pnl_pct": -1.17
     },
     "BTC-USD": {
       "shares": 0.044466,
       "avg_cost": 64601.5233,
-      "current_price": 63265.2188,
-      "current_value": 2813.15,
-      "unrealized_pnl_pct": -2.07
+      "current_price": 64063.3594,
+      "current_value": 2848.64,
+      "unrealized_pnl_pct": -0.83
     },
     "DOGE-USD": {
       "shares": 29187.006508,
       "avg_cost": 0.0775,
-      "current_price": 0.072,
-      "current_value": 2101.46,
-      "unrealized_pnl_pct": -7.1
+      "current_price": 0.0727,
+      "current_value": 2121.9,
+      "unrealized_pnl_pct": -6.19
     },
     "MSTR": {
       "shares": 4.081772,
       "avg_cost": 82.31,
-      "current_price": 93.73,
-      "current_value": 382.58,
-      "unrealized_pnl_pct": 13.87
+      "current_price": 94.85,
+      "current_value": 387.16,
+      "unrealized_pnl_pct": 15.24
     }
   },
-  "total_value": 9768.78,
-  "return_pct": -2.31,
+  "total_value": 9852.33,
+  "return_pct": -1.48,
   "peak_value": 10107.37,
   "max_drawdown": 10.06,
   "last_updated": "2026-07-17",
