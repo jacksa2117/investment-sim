@@ -978,5 +978,20 @@
     ],
     "portfolio_value": 10034.07,
     "return_pct": 0.34
+  },
+  {
+    "date": "2026-07-27",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "TSLA",
+        "shares": 0.4912,
+        "price": 309.22,
+        "value": 151.9,
+        "justification": "RSI=27 oversold bounce on TSLA. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 10027.45,
+    "return_pct": 0.27
   }
 ]
