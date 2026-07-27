@@ -885,5 +885,20 @@
     ],
     "portfolio_value": 9887.17,
     "return_pct": -1.13
+  },
+  {
+    "date": "2026-07-27",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "TSLA",
+        "shares": 0.2073,
+        "price": 309.42,
+        "value": 64.14,
+        "justification": "RSI=27 oversold on TSLA. Classic dip buy. Trump sentiment: +0.00. F&G=50."
+      }
+    ],
+    "portfolio_value": 10149.54,
+    "return_pct": 1.5
   }
 ]
