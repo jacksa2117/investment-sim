@@ -1,48 +1,48 @@
 {
   "agent_name": "Speculator",
   "starting_capital": 10000,
-  "cash": 567.4296,
+  "cash": 465.2923,
   "holdings": {
     "ETH-USD": {
       "shares": 1.610077,
       "avg_cost": 1862.7229,
-      "current_price": 1916.38,
-      "current_value": 3085.52,
-      "unrealized_pnl_pct": 2.88
+      "current_price": 1922.4,
+      "current_value": 3095.21,
+      "unrealized_pnl_pct": 3.2
     },
     "BTC-USD": {
       "shares": 0.044466,
       "avg_cost": 64601.5233,
-      "current_price": 63789.9609,
-      "current_value": 2836.48,
-      "unrealized_pnl_pct": -1.26
+      "current_price": 63957.5195,
+      "current_value": 2843.94,
+      "unrealized_pnl_pct": -1.0
     },
     "DOGE-USD": {
       "shares": 29187.006508,
       "avg_cost": 0.0775,
-      "current_price": 0.0709,
-      "current_value": 2069.36,
-      "unrealized_pnl_pct": -8.52
+      "current_price": 0.071,
+      "current_value": 2072.28,
+      "unrealized_pnl_pct": -8.39
     },
     "MSTR": {
       "shares": 4.081772,
       "avg_cost": 82.31,
-      "current_price": 97.41,
-      "current_value": 397.61,
-      "unrealized_pnl_pct": 18.35
+      "current_price": 96.16,
+      "current_value": 392.5,
+      "unrealized_pnl_pct": 16.83
     },
     "TSLA": {
-      "shares": 3.105709,
-      "avg_cost": 310.1074,
-      "current_price": 306.43,
-      "current_value": 951.68,
-      "unrealized_pnl_pct": -1.19
+      "shares": 3.437928,
+      "avg_cost": 309.8496,
+      "current_price": 307.44,
+      "current_value": 1056.96,
+      "unrealized_pnl_pct": -0.78
     }
   },
-  "total_value": 9908.08,
-  "return_pct": -0.92,
+  "total_value": 9926.18,
+  "return_pct": -0.74,
   "peak_value": 10161.74,
   "max_drawdown": 10.06,
   "last_updated": "2026-07-28",
-  "trade_count": 16
+  "trade_count": 17
 }
