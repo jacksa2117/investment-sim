@@ -1026,5 +1026,20 @@
     ],
     "portfolio_value": 8877.36,
     "return_pct": -11.23
+  },
+  {
+    "date": "2026-07-30",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "COIN",
+        "shares": 0.4158,
+        "price": 163.58,
+        "value": 68.01,
+        "justification": "Market PUMPING (1.7% today)! I HAVE to buy COIN right now before it goes parabolic! 1W return: 1.5%."
+      }
+    ],
+    "portfolio_value": 8895.69,
+    "return_pct": -11.04
   }
 ]
