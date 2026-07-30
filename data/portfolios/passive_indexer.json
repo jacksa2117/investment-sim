@@ -6,22 +6,22 @@
     "SPY": {
       "shares": 9.21574,
       "avg_cost": 759.57,
-      "current_price": 733.3264,
-      "current_value": 6758.15,
-      "unrealized_pnl_pct": -3.46
+      "current_price": 738.11,
+      "current_value": 6802.23,
+      "unrealized_pnl_pct": -2.83
     },
     "VT": {
       "shares": 5.647945,
       "avg_cost": 159.35,
-      "current_price": 152.68,
-      "current_value": 862.33,
-      "unrealized_pnl_pct": -4.19
+      "current_price": 154.77,
+      "current_value": 874.13,
+      "unrealized_pnl_pct": -2.87
     }
   },
-  "total_value": 9720.47,
-  "return_pct": -2.8,
+  "total_value": 9776.36,
+  "return_pct": -2.24,
   "peak_value": 10000,
   "max_drawdown": 3.25,
-  "last_updated": "2026-07-29",
+  "last_updated": "2026-07-30",
   "trade_count": 2
 }
