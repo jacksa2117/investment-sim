@@ -669,5 +669,37 @@
     ],
     "portfolio_value": 8121.93,
     "return_pct": -18.78
+  },
+  {
+    "date": "2026-08-03",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "META",
+        "shares": 2.9463,
+        "price": 594.14,
+        "value": 1750.51,
+        "pct_sold": 100,
+        "justification": "META rotated out of top 5. Sentiment: news=+0.00(''). Reallocating to higher-conviction names."
+      },
+      {
+        "action": "BUY",
+        "ticker": "CRWD",
+        "shares": 8.1339,
+        "price": 198.56,
+        "value": 1615.07,
+        "justification": "Top-5 growth pick: CRWD. 26% YoY revenue growth. Sentiment: news=+0.00(''). Tolerates 30%+ drawdowns for asymmetric upside."
+      },
+      {
+        "action": "BUY",
+        "ticker": "GOOGL",
+        "shares": 2.6721,
+        "price": 375.65,
+        "value": 1003.77,
+        "justification": "Top-5 growth pick: GOOGL. 24% YoY revenue growth. Sentiment: news=+0.00(''). Tolerates 30%+ drawdowns for asymmetric upside."
+      }
+    ],
+    "portfolio_value": 8500.37,
+    "return_pct": -15.0
   }
 ]
