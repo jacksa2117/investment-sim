@@ -1,55 +1,55 @@
 {
   "agent_name": "Speculator",
   "starting_capital": 10000,
-  "cash": 210.3688,
+  "cash": 172.5024,
   "holdings": {
     "ETH-USD": {
       "shares": 1.610077,
       "avg_cost": 1862.7229,
-      "current_price": 1866.0601,
-      "current_value": 3004.5,
-      "unrealized_pnl_pct": 0.18
+      "current_price": 1871.64,
+      "current_value": 3013.48,
+      "unrealized_pnl_pct": 0.48
     },
     "BTC-USD": {
       "shares": 0.044466,
       "avg_cost": 64601.5233,
-      "current_price": 63601.6016,
-      "current_value": 2828.11,
-      "unrealized_pnl_pct": -1.55
+      "current_price": 64038.7617,
+      "current_value": 2847.55,
+      "unrealized_pnl_pct": -0.87
     },
     "DOGE-USD": {
       "shares": 29187.006508,
       "avg_cost": 0.0775,
-      "current_price": 0.0704,
-      "current_value": 2054.77,
-      "unrealized_pnl_pct": -9.16
+      "current_price": 0.0703,
+      "current_value": 2051.85,
+      "unrealized_pnl_pct": -9.29
     },
     "MSTR": {
       "shares": 4.081772,
       "avg_cost": 82.31,
-      "current_price": 94.86,
-      "current_value": 387.2,
-      "unrealized_pnl_pct": 15.25
+      "current_price": 96.3,
+      "current_value": 393.07,
+      "unrealized_pnl_pct": 17.0
     },
     "TSLA": {
       "shares": 3.946186,
       "avg_cost": 308.569,
-      "current_price": 322.08,
-      "current_value": 1270.99,
-      "unrealized_pnl_pct": 4.38
+      "current_price": 325.603,
+      "current_value": 1284.89,
+      "unrealized_pnl_pct": 5.52
     },
     "GME": {
-      "shares": 5.442382,
-      "avg_cost": 18.8325,
-      "current_price": 19.06,
-      "current_value": 103.73,
-      "unrealized_pnl_pct": 1.21
+      "shares": 7.435318,
+      "avg_cost": 18.8775,
+      "current_price": 19.0003,
+      "current_value": 141.27,
+      "unrealized_pnl_pct": 0.65
     }
   },
-  "total_value": 9859.66,
-  "return_pct": -1.4,
+  "total_value": 9904.62,
+  "return_pct": -0.95,
   "peak_value": 10161.74,
   "max_drawdown": 10.06,
-  "last_updated": "2026-08-03",
-  "trade_count": 21
+  "last_updated": "2026-08-04",
+  "trade_count": 22
 }

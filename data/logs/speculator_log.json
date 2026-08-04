@@ -1127,5 +1127,20 @@
     ],
     "portfolio_value": 9859.66,
     "return_pct": -1.4
+  },
+  {
+    "date": "2026-08-04",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "GME",
+        "shares": 1.9929,
+        "price": 19.0,
+        "value": 37.87,
+        "justification": "RSI=27 oversold bounce on GME. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 9904.62,
+    "return_pct": -0.95
   }
 ]
