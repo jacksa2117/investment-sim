@@ -1070,5 +1070,16 @@
     ],
     "portfolio_value": 10026.4,
     "return_pct": 0.26
+  },
+  {
+    "date": "2026-08-05",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Chilling. F&G=50. Trump news: +0.00. Top positions: BTC-USD(+2.3%), ETH-USD(+9.8%), DOGE-USD(-12.3%), TSLA(+3.2%). Cash: $132. Waiting for the next meme catalyst."
+      }
+    ],
+    "portfolio_value": 10090.62,
+    "return_pct": 0.91
   }
 ]
