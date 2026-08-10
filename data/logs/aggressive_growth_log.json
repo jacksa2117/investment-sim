@@ -734,5 +734,16 @@
     ],
     "portfolio_value": 9410.57,
     "return_pct": -5.89
+  },
+  {
+    "date": "2026-08-10",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Holding top-5: PLTR, NVDA, SHOP, AMD, SNOW. Overall sentiment: +0.00. Next rebalance: end of August. Portfolio: $9,676.95."
+      }
+    ],
+    "portfolio_value": 9676.95,
+    "return_pct": -3.23
   }
 ]
