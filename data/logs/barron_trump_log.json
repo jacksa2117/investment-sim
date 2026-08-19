@@ -1279,5 +1279,21 @@
     ],
     "portfolio_value": 10371.47,
     "return_pct": 3.71
+  },
+  {
+    "date": "2026-08-19",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "ETH-USD",
+        "shares": 0.6129,
+        "price": 2234.66,
+        "value": 1369.66,
+        "pct_sold": 40,
+        "justification": "RSI=82 overbought + 28.6% gain on ETH-USD. Trimming 40%. F&G=50. Taking some off the table."
+      }
+    ],
+    "portfolio_value": 11067.86,
+    "return_pct": 10.68
   }
 ]
