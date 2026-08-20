@@ -1398,5 +1398,30 @@
     ],
     "portfolio_value": 10963.53,
     "return_pct": 9.64
+  },
+  {
+    "date": "2026-08-20",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "ETH-USD",
+        "shares": 0.3864,
+        "price": 2299.76,
+        "value": 888.67,
+        "pct_sold": 60,
+        "justification": "RSI=84 (overbought). Locking in 23.5% gain. WSB mentions: 0. Momentum traders exit into strength."
+      },
+      {
+        "action": "SELL",
+        "ticker": "BTC-USD",
+        "shares": 0.0107,
+        "price": 72344.35,
+        "value": 772.03,
+        "pct_sold": 60,
+        "justification": "RSI=79 (overbought). Locking in 12.0% gain. WSB mentions: 0. Momentum traders exit into strength."
+      }
+    ],
+    "portfolio_value": 11181.95,
+    "return_pct": 11.82
   }
 ]
