@@ -1,55 +1,55 @@
 {
   "agent_name": "Speculator",
   "starting_capital": 10000,
-  "cash": 5837.8224,
+  "cash": 6505.6824,
   "holdings": {
     "ETH-USD": {
-      "shares": 0.257612,
+      "shares": 0.103045,
       "avg_cost": 1862.7229,
-      "current_price": 2299.76,
-      "current_value": 592.45,
-      "unrealized_pnl_pct": 23.46
+      "current_price": 2315.8301,
+      "current_value": 238.63,
+      "unrealized_pnl_pct": 24.32
     },
     "BTC-USD": {
-      "shares": 0.007114,
+      "shares": 0.002846,
       "avg_cost": 64601.5233,
-      "current_price": 72344.3516,
-      "current_value": 514.66,
-      "unrealized_pnl_pct": 11.99
+      "current_price": 72604.5312,
+      "current_value": 206.63,
+      "unrealized_pnl_pct": 12.39
     },
     "DOGE-USD": {
       "shares": 29187.006508,
       "avg_cost": 0.0775,
-      "current_price": 0.0789,
-      "current_value": 2302.85,
-      "unrealized_pnl_pct": 1.81
+      "current_price": 0.0803,
+      "current_value": 2343.72,
+      "unrealized_pnl_pct": 3.61
     },
     "MSTR": {
       "shares": 4.081772,
       "avg_cost": 82.31,
-      "current_price": 111.365,
-      "current_value": 454.57,
-      "unrealized_pnl_pct": 35.3
+      "current_price": 112.39,
+      "current_value": 458.75,
+      "unrealized_pnl_pct": 36.54
     },
     "TSLA": {
       "shares": 3.946186,
       "avg_cost": 308.569,
-      "current_price": 341.2,
-      "current_value": 1346.44,
-      "unrealized_pnl_pct": 10.57
+      "current_price": 345.13,
+      "current_value": 1361.95,
+      "unrealized_pnl_pct": 11.85
     },
     "GME": {
       "shares": 7.435318,
       "avg_cost": 18.8775,
-      "current_price": 17.91,
-      "current_value": 133.17,
-      "unrealized_pnl_pct": -5.13
+      "current_price": 18.04,
+      "current_value": 134.13,
+      "unrealized_pnl_pct": -4.44
     }
   },
-  "total_value": 11181.95,
-  "return_pct": 11.82,
-  "peak_value": 11181.98,
+  "total_value": 11249.5,
+  "return_pct": 12.49,
+  "peak_value": 11249.5,
   "max_drawdown": 10.06,
   "last_updated": "2026-08-20",
-  "trade_count": 26
+  "trade_count": 28
 }
