@@ -1345,5 +1345,39 @@
     ],
     "portfolio_value": 11515.76,
     "return_pct": 15.16
+  },
+  {
+    "date": "2026-08-21",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "BTC-USD",
+        "shares": 0.019,
+        "price": 77453.11,
+        "value": 1470.56,
+        "pct_sold": 40,
+        "justification": "RSI=85 overbought + 22.5% gain on BTC-USD. Trimming 40%. F&G=50. Taking some off the table."
+      },
+      {
+        "action": "SELL",
+        "ticker": "ETH-USD",
+        "shares": 0.1324,
+        "price": 2392.86,
+        "value": 316.79,
+        "pct_sold": 40,
+        "justification": "RSI=86 overbought + 37.7% gain on ETH-USD. Trimming 40%. F&G=50. Taking some off the table."
+      },
+      {
+        "action": "SELL",
+        "ticker": "SOL-USD",
+        "shares": 0.9053,
+        "price": 91.92,
+        "value": 83.22,
+        "pct_sold": 40,
+        "justification": "RSI=82 overbought + 34.9% gain on SOL-USD. Trimming 40%. F&G=50. Taking some off the table."
+      }
+    ],
+    "portfolio_value": 11953.38,
+    "return_pct": 19.53
   }
 ]
