@@ -1577,5 +1577,48 @@
     ],
     "portfolio_value": 11536.34,
     "return_pct": 15.36
+  },
+  {
+    "date": "2026-08-24",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "ETH-USD",
+        "shares": 0.004,
+        "price": 2479.55,
+        "value": 9.81,
+        "pct_sold": 60,
+        "justification": "RSI=80 (overbought). Locking in 33.1% gain. WSB mentions: 0. Momentum traders exit into strength."
+      },
+      {
+        "action": "SELL",
+        "ticker": "BTC-USD",
+        "shares": 0.0001,
+        "price": 78963.64,
+        "value": 8.62,
+        "pct_sold": 60,
+        "justification": "RSI=82 (overbought). Locking in 22.2% gain. WSB mentions: 0. Momentum traders exit into strength."
+      },
+      {
+        "action": "SELL",
+        "ticker": "DOGE-USD",
+        "shares": 1120.781,
+        "price": 0.09,
+        "value": 100.42,
+        "pct_sold": 60,
+        "justification": "RSI=74 (overbought). Locking in 15.6% gain. WSB mentions: 0. Momentum traders exit into strength."
+      },
+      {
+        "action": "SELL",
+        "ticker": "MSTR",
+        "shares": 0.4051,
+        "price": 122.63,
+        "value": 49.68,
+        "pct_sold": 33,
+        "justification": "Taking 33% profit \u2014 MSTR +49.0%. Never wrong to take money off the table. WSB: 0 mentions."
+      }
+    ],
+    "portfolio_value": 11490.16,
+    "return_pct": 14.9
   }
 ]
