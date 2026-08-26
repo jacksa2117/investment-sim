@@ -1679,5 +1679,30 @@
     ],
     "portfolio_value": 11497.71,
     "return_pct": 14.98
+  },
+  {
+    "date": "2026-08-26",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "ETH-USD",
+        "shares": 0.0003,
+        "price": 2450.1,
+        "value": 0.62,
+        "pct_sold": 60,
+        "justification": "RSI=76 (overbought). Locking in 31.5% gain. WSB mentions: 0. Momentum traders exit into strength."
+      },
+      {
+        "action": "SELL",
+        "ticker": "MSTR",
+        "shares": 0.1218,
+        "price": 122.02,
+        "value": 14.87,
+        "pct_sold": 33,
+        "justification": "Taking 33% profit \u2014 MSTR +48.2%. Never wrong to take money off the table. WSB: 0 mentions."
+      }
+    ],
+    "portfolio_value": 11470.81,
+    "return_pct": 14.71
   }
 ]
