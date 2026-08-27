@@ -1729,5 +1729,21 @@
     ],
     "portfolio_value": 11478.06,
     "return_pct": 14.78
+  },
+  {
+    "date": "2026-08-27",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "MSTR",
+        "shares": 0.0994,
+        "price": 137.4,
+        "value": 13.66,
+        "pct_sold": 60,
+        "justification": "RSI=73 (overbought). Locking in 66.9% gain. WSB mentions: 0. Momentum traders exit into strength."
+      }
+    ],
+    "portfolio_value": 11518.59,
+    "return_pct": 15.19
   }
 ]
