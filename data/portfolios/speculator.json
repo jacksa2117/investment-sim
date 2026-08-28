@@ -1,41 +1,41 @@
 {
   "agent_name": "Speculator",
   "starting_capital": 10000,
-  "cash": 9952.4524,
+  "cash": 9953.5624,
   "holdings": {
     "DOGE-USD": {
       "shares": 298.874946,
       "avg_cost": 0.0775,
-      "current_price": 0.0879,
-      "current_value": 26.27,
-      "unrealized_pnl_pct": 13.42
+      "current_price": 0.0851,
+      "current_value": 25.43,
+      "unrealized_pnl_pct": 9.81
     },
     "MSTR": {
-      "shares": 0.02652,
+      "shares": 0.017768,
       "avg_cost": 82.31,
-      "current_price": 137.4,
-      "current_value": 3.64,
-      "unrealized_pnl_pct": 66.93
+      "current_price": 127.31,
+      "current_value": 2.26,
+      "unrealized_pnl_pct": 54.67
     },
     "TSLA": {
       "shares": 3.946186,
       "avg_cost": 308.569,
-      "current_price": 354.81,
-      "current_value": 1400.15,
-      "unrealized_pnl_pct": 14.99
+      "current_price": 348.75,
+      "current_value": 1376.23,
+      "unrealized_pnl_pct": 13.02
     },
     "GME": {
       "shares": 7.435318,
       "avg_cost": 18.8775,
-      "current_price": 18.25,
-      "current_value": 135.69,
-      "unrealized_pnl_pct": -3.32
+      "current_price": 17.87,
+      "current_value": 132.87,
+      "unrealized_pnl_pct": -5.34
     }
   },
-  "total_value": 11518.21,
-  "return_pct": 15.18,
+  "total_value": 11490.36,
+  "return_pct": 14.9,
   "peak_value": 11536.34,
   "max_drawdown": 10.06,
   "last_updated": "2026-08-28",
-  "trade_count": 55
+  "trade_count": 56
 }
