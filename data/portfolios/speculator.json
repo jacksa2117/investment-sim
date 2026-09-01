@@ -1,20 +1,20 @@
 {
   "agent_name": "Speculator",
   "starting_capital": 10000,
-  "cash": 9954.8324,
+  "cash": 9955.1824,
   "holdings": {
     "DOGE-USD": {
       "shares": 298.874946,
       "avg_cost": 0.0775,
-      "current_price": 0.0833,
-      "current_value": 24.9,
-      "unrealized_pnl_pct": 7.48
+      "current_price": 0.0828,
+      "current_value": 24.75,
+      "unrealized_pnl_pct": 6.84
     },
     "MSTR": {
-      "shares": 0.007976,
+      "shares": 0.005344,
       "avg_cost": 82.31,
       "current_price": 132.94,
-      "current_value": 1.06,
+      "current_value": 0.71,
       "unrealized_pnl_pct": 61.51
     },
     "TSLA": {
@@ -32,10 +32,10 @@
       "unrealized_pnl_pct": -2.64
     }
   },
-  "total_value": 11569.45,
+  "total_value": 11569.3,
   "return_pct": 15.69,
   "peak_value": 11569.45,
   "max_drawdown": 10.06,
-  "last_updated": "2026-08-31",
-  "trade_count": 58
+  "last_updated": "2026-09-01",
+  "trade_count": 59
 }
