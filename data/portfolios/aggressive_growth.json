@@ -1,49 +1,49 @@
 {
   "agent_name": "Aggressive Growth",
   "starting_capital": 10000,
-  "cash": 52.83,
+  "cash": 73.577,
   "holdings": {
     "PLTR": {
       "shares": 14.3056,
       "avg_cost": 149.0016,
-      "current_price": 174.7,
-      "current_value": 2499.19,
-      "unrealized_pnl_pct": 17.25
+      "current_price": 182.305,
+      "current_value": 2607.98,
+      "unrealized_pnl_pct": 22.35
     },
     "NVDA": {
       "shares": 8.527062,
       "avg_cost": 222.82,
-      "current_price": 210.615,
-      "current_value": 1795.93,
-      "unrealized_pnl_pct": -5.48
-    },
-    "SNOW": {
-      "shares": 7.275791,
-      "avg_cost": 261.14,
-      "current_price": 317.03,
-      "current_value": 2306.64,
-      "unrealized_pnl_pct": 21.4
+      "current_price": 218.01,
+      "current_value": 1858.98,
+      "unrealized_pnl_pct": -2.16
     },
     "CRWD": {
       "shares": 8.133925,
       "avg_cost": 198.56,
-      "current_price": 187.09,
-      "current_value": 1521.78,
-      "unrealized_pnl_pct": -5.78
+      "current_price": 213.855,
+      "current_value": 1739.48,
+      "unrealized_pnl_pct": 7.7
     },
-    "GOOGL": {
-      "shares": 2.672087,
-      "avg_cost": 375.65,
-      "current_price": 341.51,
-      "current_value": 912.54,
-      "unrealized_pnl_pct": -9.09
+    "AMD": {
+      "shares": 3.954657,
+      "avg_cost": 455.415,
+      "current_price": 455.415,
+      "current_value": 1801.01,
+      "unrealized_pnl_pct": 0.0
+    },
+    "META": {
+      "shares": 2.401627,
+      "avg_cost": 582.09,
+      "current_price": 582.09,
+      "current_value": 1397.96,
+      "unrealized_pnl_pct": 0.0
     }
   },
-  "total_value": 9088.91,
-  "return_pct": -9.11,
+  "total_value": 9479.0,
+  "return_pct": -5.21,
   "peak_value": 10000.0,
   "max_drawdown": 19.7,
-  "last_updated": "2026-08-26",
-  "trade_count": 26,
-  "last_rebalance_month": "2026-08"
+  "last_updated": "2026-09-01",
+  "trade_count": 30,
+  "last_rebalance_month": "2026-09"
 }

@@ -877,5 +877,46 @@
     ],
     "portfolio_value": 9088.91,
     "return_pct": -9.11
+  },
+  {
+    "date": "2026-09-01",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "SNOW",
+        "shares": 7.2758,
+        "price": 319.64,
+        "value": 2325.67,
+        "pct_sold": 100,
+        "justification": "SNOW rotated out of top 5. Sentiment: news=+0.00(''). Reallocating to higher-conviction names."
+      },
+      {
+        "action": "SELL",
+        "ticker": "GOOGL",
+        "shares": 2.6721,
+        "price": 334.59,
+        "value": 894.05,
+        "pct_sold": 100,
+        "justification": "GOOGL rotated out of top 5. Sentiment: news=+0.00(''). Reallocating to higher-conviction names."
+      },
+      {
+        "action": "BUY",
+        "ticker": "AMD",
+        "shares": 3.9547,
+        "price": 455.42,
+        "value": 1801.01,
+        "justification": "Top-5 growth pick: AMD. 50% YoY revenue growth. Sentiment: news=+0.00(''). Tolerates 30%+ drawdowns for asymmetric upside."
+      },
+      {
+        "action": "BUY",
+        "ticker": "META",
+        "shares": 2.4016,
+        "price": 582.09,
+        "value": 1397.96,
+        "justification": "Top-5 growth pick: META. 28% YoY revenue growth. Sentiment: news=+0.00(''). Tolerates 30%+ drawdowns for asymmetric upside."
+      }
+    ],
+    "portfolio_value": 9479.0,
+    "return_pct": -5.21
   }
 ]
