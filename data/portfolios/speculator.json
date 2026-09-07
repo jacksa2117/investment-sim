@@ -6,9 +6,9 @@
     "DOGE-USD": {
       "shares": 298.874946,
       "avg_cost": 0.0775,
-      "current_price": 0.0899,
-      "current_value": 26.87,
-      "unrealized_pnl_pct": 16.0
+      "current_price": 0.0901,
+      "current_value": 26.93,
+      "unrealized_pnl_pct": 16.26
     },
     "MSTR": {
       "shares": 0.000145,
@@ -32,8 +32,8 @@
       "unrealized_pnl_pct": 1.5
     }
   },
-  "total_value": 11522.47,
-  "return_pct": 15.22,
+  "total_value": 11522.53,
+  "return_pct": 15.23,
   "peak_value": 11635.92,
   "max_drawdown": 10.06,
   "last_updated": "2026-09-07",
