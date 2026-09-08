@@ -6,44 +6,44 @@
     "PLTR": {
       "shares": 14.3056,
       "avg_cost": 149.0016,
-      "current_price": 174.33,
-      "current_value": 2493.9,
-      "unrealized_pnl_pct": 17.0
+      "current_price": 171.76,
+      "current_value": 2457.13,
+      "unrealized_pnl_pct": 15.27
     },
     "NVDA": {
       "shares": 8.527062,
       "avg_cost": 222.82,
-      "current_price": 230.36,
-      "current_value": 1964.29,
-      "unrealized_pnl_pct": 3.38
+      "current_price": 225.84,
+      "current_value": 1925.75,
+      "unrealized_pnl_pct": 1.36
     },
     "CRWD": {
       "shares": 8.133925,
       "avg_cost": 198.56,
-      "current_price": 213.1,
-      "current_value": 1733.34,
-      "unrealized_pnl_pct": 7.32
+      "current_price": 210.465,
+      "current_value": 1711.91,
+      "unrealized_pnl_pct": 6.0
     },
     "AMD": {
       "shares": 3.954657,
       "avg_cost": 455.415,
-      "current_price": 477.57,
-      "current_value": 1888.63,
-      "unrealized_pnl_pct": 4.86
+      "current_price": 507.88,
+      "current_value": 2008.49,
+      "unrealized_pnl_pct": 11.52
     },
     "META": {
       "shares": 2.401627,
       "avg_cost": 582.09,
-      "current_price": 616.77,
-      "current_value": 1481.25,
-      "unrealized_pnl_pct": 5.96
+      "current_price": 617.385,
+      "current_value": 1482.73,
+      "unrealized_pnl_pct": 6.06
     }
   },
-  "total_value": 9634.98,
-  "return_pct": -3.65,
+  "total_value": 9659.58,
+  "return_pct": -3.4,
   "peak_value": 10000.0,
   "max_drawdown": 19.7,
-  "last_updated": "2026-09-07",
+  "last_updated": "2026-09-08",
   "trade_count": 30,
   "last_rebalance_month": "2026-09"
 }

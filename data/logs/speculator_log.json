@@ -1980,5 +1980,21 @@
     ],
     "portfolio_value": 11522.53,
     "return_pct": 15.23
+  },
+  {
+    "date": "2026-09-08",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "MSTR",
+        "shares": 0.0,
+        "price": 137.24,
+        "value": 0.01,
+        "pct_sold": 33,
+        "justification": "Taking 33% profit \u2014 MSTR +66.7%. Never wrong to take money off the table. WSB: 0 mentions."
+      }
+    ],
+    "portfolio_value": 11567.31,
+    "return_pct": 15.67
   }
 ]
