@@ -2159,5 +2159,21 @@
     ],
     "portfolio_value": 11590.85,
     "return_pct": 15.91
+  },
+  {
+    "date": "2026-09-17",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "GME",
+        "shares": 0.1142,
+        "price": 22.77,
+        "value": 2.6,
+        "pct_sold": 60,
+        "justification": "RSI=77 (overbought). Locking in 20.6% gain. WSB mentions: 0. Momentum traders exit into strength."
+      }
+    ],
+    "portfolio_value": 11587.79,
+    "return_pct": 15.88
   }
 ]
