@@ -6,56 +6,56 @@
     "BTC-USD": {
       "shares": 0.000287,
       "avg_cost": 63202.7812,
-      "current_price": 86603.0078,
-      "current_value": 24.86,
-      "unrealized_pnl_pct": 37.02
+      "current_price": 86414.9922,
+      "current_value": 24.8,
+      "unrealized_pnl_pct": 36.73
     },
     "ETH-USD": {
       "shares": 0.003335,
       "avg_cost": 1737.9883,
-      "current_price": 2768.5601,
-      "current_value": 9.23,
-      "unrealized_pnl_pct": 59.3
+      "current_price": 2771.49,
+      "current_value": 9.24,
+      "unrealized_pnl_pct": 59.47
     },
     "DOGE-USD": {
       "shares": 33119.311971,
       "avg_cost": 0.0799,
-      "current_price": 0.0982,
-      "current_value": 3252.32,
-      "unrealized_pnl_pct": 22.9
+      "current_price": 0.0995,
+      "current_value": 3295.37,
+      "unrealized_pnl_pct": 24.53
     },
     "NVDA": {
       "shares": 2.176896,
       "avg_cost": 218.66,
-      "current_price": 227.63,
-      "current_value": 495.53,
-      "unrealized_pnl_pct": 4.1
+      "current_price": 227.38,
+      "current_value": 494.98,
+      "unrealized_pnl_pct": 3.99
     },
     "SOL-USD": {
       "shares": 0.013685,
       "avg_cost": 68.14,
-      "current_price": 118.16,
+      "current_price": 118.67,
       "current_value": 1.62,
-      "unrealized_pnl_pct": 73.41
+      "unrealized_pnl_pct": 74.16
     },
     "MSTR": {
       "shares": 1.723545,
       "avg_cost": 82.31,
-      "current_price": 169.0771,
-      "current_value": 291.41,
-      "unrealized_pnl_pct": 105.42
+      "current_price": 168.5,
+      "current_value": 290.42,
+      "unrealized_pnl_pct": 104.71
     },
     "TSLA": {
       "shares": 1.650532,
       "avg_cost": 311.5158,
-      "current_price": 375.948,
-      "current_value": 620.51,
-      "unrealized_pnl_pct": 20.68
+      "current_price": 375.3,
+      "current_value": 619.44,
+      "unrealized_pnl_pct": 20.48
     }
   },
-  "total_value": 12598.6,
-  "return_pct": 25.99,
-  "peak_value": 12598.6,
+  "total_value": 12639.01,
+  "return_pct": 26.39,
+  "peak_value": 12639.01,
   "max_drawdown": 11.54,
   "last_updated": "2026-09-21",
   "trade_count": 56
