@@ -934,5 +934,16 @@
     ],
     "portfolio_value": 10069.34,
     "return_pct": 0.69
+  },
+  {
+    "date": "2026-09-25",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Zero activity. News ignored: 'none'. WSB buzz: nothing notable. F&G=50 \u2014 irrelevant. SPY=70.3%, VT=8.9%. Academic evidence: 90%+ of active managers underperform over 10 years. Portfolio: $10,107.14."
+      }
+    ],
+    "portfolio_value": 10107.14,
+    "return_pct": 1.07
   }
 ]
