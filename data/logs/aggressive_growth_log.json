@@ -1138,5 +1138,29 @@
     ],
     "portfolio_value": 11068.53,
     "return_pct": 10.69
+  },
+  {
+    "date": "2026-10-01",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "META",
+        "shares": 2.4016,
+        "price": 728.47,
+        "value": 1749.51,
+        "pct_sold": 100,
+        "justification": "META rotated out of top 5. Sentiment: no signal. Reallocating to higher-conviction names."
+      },
+      {
+        "action": "BUY",
+        "ticker": "SNOW",
+        "shares": 5.0677,
+        "price": 341.76,
+        "value": 1731.93,
+        "justification": "Top-5 growth pick: SNOW. 35% YoY revenue growth. Sentiment: no signal. Tolerates 30%+ drawdowns for asymmetric upside."
+      }
+    ],
+    "portfolio_value": 11142.3,
+    "return_pct": 11.42
   }
 ]
