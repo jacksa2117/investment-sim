@@ -6,55 +6,55 @@
     "BTC-USD": {
       "shares": 0.000287,
       "avg_cost": 63202.7812,
-      "current_price": 82112.0234,
-      "current_value": 23.57,
-      "unrealized_pnl_pct": 29.92
+      "current_price": 82091.6172,
+      "current_value": 23.56,
+      "unrealized_pnl_pct": 29.89
     },
     "ETH-USD": {
       "shares": 0.003335,
       "avg_cost": 1737.9883,
-      "current_price": 2438.9099,
+      "current_price": 2437.8701,
       "current_value": 8.13,
-      "unrealized_pnl_pct": 40.33
+      "unrealized_pnl_pct": 40.27
     },
     "DOGE-USD": {
       "shares": 33119.311971,
       "avg_cost": 0.0799,
-      "current_price": 0.081,
-      "current_value": 2682.66,
-      "unrealized_pnl_pct": 1.38
+      "current_price": 0.0808,
+      "current_value": 2676.04,
+      "unrealized_pnl_pct": 1.13
     },
     "NVDA": {
       "shares": 2.176896,
       "avg_cost": 218.66,
-      "current_price": 216.995,
-      "current_value": 472.38,
-      "unrealized_pnl_pct": -0.76
+      "current_price": 217.23,
+      "current_value": 472.89,
+      "unrealized_pnl_pct": -0.65
     },
     "SOL-USD": {
       "shares": 0.013685,
       "avg_cost": 68.14,
-      "current_price": 105.39,
+      "current_price": 105.3,
       "current_value": 1.44,
-      "unrealized_pnl_pct": 54.67
+      "unrealized_pnl_pct": 54.53
     },
     "MSTR": {
       "shares": 1.723545,
       "avg_cost": 82.31,
-      "current_price": 148.805,
-      "current_value": 256.47,
-      "unrealized_pnl_pct": 80.79
+      "current_price": 151.29,
+      "current_value": 260.76,
+      "unrealized_pnl_pct": 83.81
     },
     "TSLA": {
       "shares": 1.650532,
       "avg_cost": 311.5158,
-      "current_price": 359.94,
-      "current_value": 594.09,
-      "unrealized_pnl_pct": 15.54
+      "current_price": 362.44,
+      "current_value": 598.22,
+      "unrealized_pnl_pct": 16.35
     }
   },
-  "total_value": 11941.87,
-  "return_pct": 19.42,
+  "total_value": 11944.16,
+  "return_pct": 19.44,
   "peak_value": 12695.87,
   "max_drawdown": 11.54,
   "last_updated": "2026-10-15",
