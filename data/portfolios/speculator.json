@@ -6,22 +6,22 @@
     "DOGE-USD": {
       "shares": 298.874946,
       "avg_cost": 0.0775,
-      "current_price": 0.0797,
-      "current_value": 23.82,
-      "unrealized_pnl_pct": 2.84
+      "current_price": 0.081,
+      "current_value": 24.21,
+      "unrealized_pnl_pct": 4.52
     },
     "TSLA": {
       "shares": 3.946186,
       "avg_cost": 308.569,
-      "current_price": 368.06,
-      "current_value": 1452.43,
-      "unrealized_pnl_pct": 19.28
+      "current_price": 375.045,
+      "current_value": 1480.0,
+      "unrealized_pnl_pct": 21.54
     }
   },
-  "total_value": 11594.55,
-  "return_pct": 15.95,
+  "total_value": 11622.5,
+  "return_pct": 16.22,
   "peak_value": 11656.8,
   "max_drawdown": 10.06,
-  "last_updated": "2026-10-19",
+  "last_updated": "2026-10-20",
   "trade_count": 82
 }
