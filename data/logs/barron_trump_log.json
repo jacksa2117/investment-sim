@@ -2512,5 +2512,16 @@
     ],
     "portfolio_value": 12083.39,
     "return_pct": 20.83
+  },
+  {
+    "date": "2026-10-21",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "Chilling. F&G=50. Trump news: +0.00. Top positions: DOGE-USD(+2.4%), TSLA(+24.1%), NVDA(+1.5%), MSTR(+86.5%). Cash: $7,903. Waiting for the next meme catalyst."
+      }
+    ],
+    "portfolio_value": 12031.8,
+    "return_pct": 20.32
   }
 ]
