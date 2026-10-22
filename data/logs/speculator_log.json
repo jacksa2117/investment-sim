@@ -2743,5 +2743,16 @@
     ],
     "portfolio_value": 11667.82,
     "return_pct": 16.68
+  },
+  {
+    "date": "2026-10-22",
+    "decisions": [
+      {
+        "action": "HOLD",
+        "justification": "No clear entry/exit. F&G=50 (Neutral). Crypto sent: +0.00. WSB buzz: quiet. Top positions: TSLA(+21.9%), DOGE-USD(+1.2%). Cash: $10,118."
+      }
+    ],
+    "portfolio_value": 11626.5,
+    "return_pct": 16.26
   }
 ]
