@@ -13,15 +13,15 @@
     "TSLA": {
       "shares": 3.946186,
       "avg_cost": 308.569,
-      "current_price": 403.12,
-      "current_value": 1590.79,
-      "unrealized_pnl_pct": 30.64
+      "current_price": 407.46,
+      "current_value": 1607.91,
+      "unrealized_pnl_pct": 32.05
     }
   },
-  "total_value": 11732.93,
-  "return_pct": 17.33,
+  "total_value": 11750.06,
+  "return_pct": 17.5,
   "peak_value": 11752.13,
   "max_drawdown": 10.06,
-  "last_updated": "2026-10-28",
+  "last_updated": "2026-10-29",
   "trade_count": 82
 }
