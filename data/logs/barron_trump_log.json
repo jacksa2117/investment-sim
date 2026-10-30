@@ -2644,5 +2644,20 @@
     ],
     "portfolio_value": 11931.85,
     "return_pct": 19.32
+  },
+  {
+    "date": "2026-10-30",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "SOL-USD",
+        "shares": 12.5973,
+        "price": 93.23,
+        "value": 1174.44,
+        "justification": "RSI=27 oversold on SOL-USD. Classic dip buy. Trump sentiment: +0.00. F&G=50."
+      }
+    ],
+    "portfolio_value": 11744.44,
+    "return_pct": 17.44
   }
 ]
