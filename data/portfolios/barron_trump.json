@@ -1,62 +1,62 @@
 {
   "agent_name": "Barron Trump",
   "starting_capital": 10000,
-  "cash": 5554.6235,
+  "cash": 4554.7913,
   "holdings": {
     "BTC-USD": {
       "shares": 0.000287,
       "avg_cost": 63202.7812,
-      "current_price": 77139.8438,
-      "current_value": 22.14,
-      "unrealized_pnl_pct": 22.05
+      "current_price": 76760.6484,
+      "current_value": 22.03,
+      "unrealized_pnl_pct": 21.45
     },
     "ETH-USD": {
       "shares": 0.003335,
       "avg_cost": 1737.9883,
-      "current_price": 2241.3201,
-      "current_value": 7.47,
-      "unrealized_pnl_pct": 28.96
+      "current_price": 2252.3899,
+      "current_value": 7.51,
+      "unrealized_pnl_pct": 29.6
     },
     "DOGE-USD": {
       "shares": 33119.311971,
       "avg_cost": 0.0799,
-      "current_price": 0.0759,
-      "current_value": 2513.76,
-      "unrealized_pnl_pct": -5.01
+      "current_price": 0.0741,
+      "current_value": 2454.14,
+      "unrealized_pnl_pct": -7.26
     },
     "NVDA": {
       "shares": 2.176896,
       "avg_cost": 218.66,
-      "current_price": 213.66,
-      "current_value": 465.12,
-      "unrealized_pnl_pct": -2.29
+      "current_price": 202.06,
+      "current_value": 439.86,
+      "unrealized_pnl_pct": -7.59
     },
     "SOL-USD": {
-      "shares": 25.066509,
-      "avg_cost": 93.7281,
-      "current_price": 96.17,
-      "current_value": 2410.65,
-      "unrealized_pnl_pct": 2.61
+      "shares": 35.938978,
+      "avg_cost": 93.1932,
+      "current_price": 91.96,
+      "current_value": 3304.95,
+      "unrealized_pnl_pct": -1.32
     },
     "MSTR": {
       "shares": 1.723545,
       "avg_cost": 82.31,
-      "current_price": 141.62,
-      "current_value": 244.09,
-      "unrealized_pnl_pct": 72.06
+      "current_price": 130.76,
+      "current_value": 225.37,
+      "unrealized_pnl_pct": 58.86
     },
     "TSLA": {
       "shares": 1.650532,
       "avg_cost": 311.5158,
-      "current_price": 403.3,
-      "current_value": 665.66,
-      "unrealized_pnl_pct": 29.46
+      "current_price": 403.82,
+      "current_value": 666.52,
+      "unrealized_pnl_pct": 29.63
     }
   },
-  "total_value": 11883.5,
-  "return_pct": 18.84,
+  "total_value": 11675.17,
+  "return_pct": 16.75,
   "peak_value": 12695.87,
   "max_drawdown": 11.54,
-  "last_updated": "2026-10-31",
-  "trade_count": 58
+  "last_updated": "2026-11-02",
+  "trade_count": 59
 }

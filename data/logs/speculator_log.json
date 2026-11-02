@@ -2905,5 +2905,20 @@
     ],
     "portfolio_value": 11793.24,
     "return_pct": 17.93
+  },
+  {
+    "date": "2026-11-02",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "SOL-USD",
+        "shares": 12.7114,
+        "price": 91.96,
+        "value": 1168.94,
+        "justification": "RSI=26 oversold bounce on SOL-USD. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 11689.39,
+    "return_pct": 16.89
   }
 ]
