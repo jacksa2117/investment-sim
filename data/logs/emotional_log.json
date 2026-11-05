@@ -2557,5 +2557,57 @@
     ],
     "portfolio_value": 9111.43,
     "return_pct": -8.89
+  },
+  {
+    "date": "2026-11-05",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "PLTR",
+        "shares": 8.1573,
+        "price": 154.99,
+        "value": 1264.3,
+        "pct_sold": 75,
+        "justification": "PANIC! Market COLLAPSING (-4.4% today)! I can't watch this anymore. SELLING 75% before it goes to zero! News sentiment: +0.00."
+      },
+      {
+        "action": "SELL",
+        "ticker": "COIN",
+        "shares": 17.3032,
+        "price": 136.82,
+        "value": 2367.42,
+        "pct_sold": 75,
+        "justification": "PANIC! Market COLLAPSING (-4.4% today)! I can't watch this anymore. SELLING 75% before it goes to zero! News sentiment: +0.00."
+      },
+      {
+        "action": "SELL",
+        "ticker": "AMD",
+        "shares": 5.3727,
+        "price": 404.4,
+        "value": 2172.72,
+        "pct_sold": 75,
+        "justification": "PANIC! Market COLLAPSING (-4.4% today)! I can't watch this anymore. SELLING 75% before it goes to zero! News sentiment: +0.00."
+      },
+      {
+        "action": "SELL",
+        "ticker": "TSLA",
+        "shares": 0.6399,
+        "price": 343.69,
+        "value": 219.92,
+        "pct_sold": 75,
+        "justification": "PANIC! Market COLLAPSING (-4.4% today)! I can't watch this anymore. SELLING 75% before it goes to zero! News sentiment: +0.00."
+      },
+      {
+        "action": "SELL",
+        "ticker": "NVDA",
+        "shares": 0.1358,
+        "price": 181.6,
+        "value": 24.65,
+        "pct_sold": 75,
+        "justification": "PANIC! Market COLLAPSING (-4.4% today)! I can't watch this anymore. SELLING 75% before it goes to zero! News sentiment: +0.00."
+      }
+    ],
+    "portfolio_value": 8069.53,
+    "return_pct": -19.3
   }
 ]

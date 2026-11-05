@@ -2975,5 +2975,20 @@
     ],
     "portfolio_value": 11807.7,
     "return_pct": 18.08
+  },
+  {
+    "date": "2026-11-05",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "PLTR",
+        "shares": 7.3277,
+        "price": 154.99,
+        "value": 1135.71,
+        "justification": "RSI=25 oversold bounce on PLTR. News sentiment: +0.00. F&G=50 (Neutral)."
+      }
+    ],
+    "portfolio_value": 11357.13,
+    "return_pct": 13.57
   }
 ]

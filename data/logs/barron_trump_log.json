@@ -2755,5 +2755,20 @@
     ],
     "portfolio_value": 11907.79,
     "return_pct": 19.08
+  },
+  {
+    "date": "2026-11-05",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "NVDA",
+        "shares": 4.5147,
+        "price": 181.6,
+        "value": 819.86,
+        "justification": "RSI=25 oversold on NVDA. Classic dip buy. Trump sentiment: +0.00. F&G=50."
+      }
+    ],
+    "portfolio_value": 11369.14,
+    "return_pct": 13.69
   }
 ]
