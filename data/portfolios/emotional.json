@@ -1,7 +1,7 @@
 {
   "agent_name": "Emotional",
   "starting_capital": 10000,
-  "cash": 2238.592,
+  "cash": 1231.2256,
   "holdings": {
     "PLTR": {
       "shares": 2.719096,
@@ -18,11 +18,11 @@
       "unrealized_pnl_pct": -12.65
     },
     "AMD": {
-      "shares": 7.379332,
-      "avg_cost": 494.6648,
+      "shares": 9.360075,
+      "avg_cost": 497.6095,
       "current_price": 508.58,
-      "current_value": 3752.98,
-      "unrealized_pnl_pct": 2.81
+      "current_value": 4760.35,
+      "unrealized_pnl_pct": 2.2
     },
     "TSLA": {
       "shares": 0.213295,
@@ -43,6 +43,6 @@
   "return_pct": -16.96,
   "peak_value": 11565.68,
   "max_drawdown": 30.54,
-  "last_updated": "2026-11-09",
-  "trade_count": 26
+  "last_updated": "2026-11-10",
+  "trade_count": 27
 }
