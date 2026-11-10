@@ -6,34 +6,34 @@
     "DOGE-USD": {
       "shares": 298.874946,
       "avg_cost": 0.0775,
-      "current_price": 0.0698,
-      "current_value": 20.86,
-      "unrealized_pnl_pct": -9.94
+      "current_price": 0.0676,
+      "current_value": 20.2,
+      "unrealized_pnl_pct": -12.77
     },
     "TSLA": {
       "shares": 3.946186,
       "avg_cost": 308.569,
-      "current_price": 378.05,
-      "current_value": 1491.86,
-      "unrealized_pnl_pct": 22.52
+      "current_price": 379.245,
+      "current_value": 1496.57,
+      "unrealized_pnl_pct": 22.9
     },
     "SOL-USD": {
       "shares": 37.738089,
       "avg_cost": 93.1417,
-      "current_price": 86.11,
-      "current_value": 3249.63,
-      "unrealized_pnl_pct": -7.55
+      "current_price": 83.3,
+      "current_value": 3143.58,
+      "unrealized_pnl_pct": -10.57
     },
     "PLTR": {
       "shares": 7.327653,
       "avg_cost": 154.99,
-      "current_price": 169.2,
-      "current_value": 1239.84,
-      "unrealized_pnl_pct": 9.17
+      "current_price": 168.88,
+      "current_value": 1237.49,
+      "unrealized_pnl_pct": 8.96
     }
   },
-  "total_value": 11469.77,
-  "return_pct": 14.7,
+  "total_value": 11365.44,
+  "return_pct": 13.65,
   "peak_value": 11807.7,
   "max_drawdown": 10.06,
   "last_updated": "2026-11-10",
