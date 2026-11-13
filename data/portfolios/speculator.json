@@ -13,29 +13,29 @@
     "TSLA": {
       "shares": 3.946186,
       "avg_cost": 308.569,
-      "current_price": 397.45,
-      "current_value": 1568.41,
-      "unrealized_pnl_pct": 28.8
+      "current_price": 390.84,
+      "current_value": 1542.33,
+      "unrealized_pnl_pct": 26.66
     },
     "SOL-USD": {
       "shares": 37.738089,
       "avg_cost": 93.1417,
-      "current_price": 81.47,
-      "current_value": 3074.52,
-      "unrealized_pnl_pct": -12.53
+      "current_price": 81.52,
+      "current_value": 3076.41,
+      "unrealized_pnl_pct": -12.48
     },
     "PLTR": {
       "shares": 7.327653,
       "avg_cost": 154.99,
-      "current_price": 171.58,
-      "current_value": 1257.28,
-      "unrealized_pnl_pct": 10.7
+      "current_price": 172.4,
+      "current_value": 1263.29,
+      "unrealized_pnl_pct": 11.23
     }
   },
-  "total_value": 11387.62,
-  "return_pct": 13.88,
+  "total_value": 11369.43,
+  "return_pct": 13.69,
   "peak_value": 11807.7,
   "max_drawdown": 10.06,
-  "last_updated": "2026-11-12",
+  "last_updated": "2026-11-13",
   "trade_count": 86
 }

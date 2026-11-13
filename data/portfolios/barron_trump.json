@@ -6,16 +6,16 @@
     "BTC-USD": {
       "shares": 0.000287,
       "avg_cost": 63202.7812,
-      "current_price": 71497.7734,
-      "current_value": 20.52,
-      "unrealized_pnl_pct": 13.12
+      "current_price": 71091.7578,
+      "current_value": 20.4,
+      "unrealized_pnl_pct": 12.48
     },
     "ETH-USD": {
       "shares": 0.003335,
       "avg_cost": 1737.9883,
-      "current_price": 2018.04,
-      "current_value": 6.73,
-      "unrealized_pnl_pct": 16.11
+      "current_price": 2013.83,
+      "current_value": 6.72,
+      "unrealized_pnl_pct": 15.87
     },
     "DOGE-USD": {
       "shares": 33119.311971,
@@ -27,36 +27,36 @@
     "NVDA": {
       "shares": 16.39024,
       "avg_cost": 181.2952,
-      "current_price": 166.19,
-      "current_value": 2723.89,
-      "unrealized_pnl_pct": -8.33
+      "current_price": 173.73,
+      "current_value": 2847.48,
+      "unrealized_pnl_pct": -4.17
     },
     "SOL-USD": {
       "shares": 35.938978,
       "avg_cost": 93.1932,
-      "current_price": 81.47,
-      "current_value": 2927.95,
-      "unrealized_pnl_pct": -12.58
+      "current_price": 81.52,
+      "current_value": 2929.75,
+      "unrealized_pnl_pct": -12.53
     },
     "MSTR": {
       "shares": 1.723545,
       "avg_cost": 82.31,
-      "current_price": 114.41,
-      "current_value": 197.19,
-      "unrealized_pnl_pct": 39.0
+      "current_price": 122.35,
+      "current_value": 210.88,
+      "unrealized_pnl_pct": 48.65
     },
     "TSLA": {
       "shares": 1.650532,
       "avg_cost": 311.5158,
-      "current_price": 397.45,
-      "current_value": 656.0,
-      "unrealized_pnl_pct": 27.59
+      "current_price": 390.84,
+      "current_value": 645.09,
+      "unrealized_pnl_pct": 25.46
     }
   },
-  "total_value": 10787.42,
-  "return_pct": 7.87,
+  "total_value": 10915.44,
+  "return_pct": 9.15,
   "peak_value": 12695.87,
   "max_drawdown": 15.03,
-  "last_updated": "2026-11-12",
+  "last_updated": "2026-11-13",
   "trade_count": 63
 }
