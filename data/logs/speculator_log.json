@@ -3158,5 +3158,21 @@
     ],
     "portfolio_value": 10858.4,
     "return_pct": 8.58
+  },
+  {
+    "date": "2026-11-17",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "DOGE-USD",
+        "shares": 74.7187,
+        "price": 0.06,
+        "value": 4.42,
+        "pct_sold": 50,
+        "justification": "Stop-loss: DOGE-USD down 23.7% and WSB buzz dying (0 mentions). Cutting losers."
+      }
+    ],
+    "portfolio_value": 10858.43,
+    "return_pct": 8.58
   }
 ]

@@ -6,23 +6,23 @@
     "BTC-USD": {
       "shares": 0.000287,
       "avg_cost": 63202.7812,
-      "current_price": 65123.3203,
-      "current_value": 18.69,
-      "unrealized_pnl_pct": 3.04
+      "current_price": 64594.6719,
+      "current_value": 18.54,
+      "unrealized_pnl_pct": 2.2
     },
     "ETH-USD": {
       "shares": 0.003335,
       "avg_cost": 1737.9883,
-      "current_price": 1822.1899,
-      "current_value": 6.08,
-      "unrealized_pnl_pct": 4.84
+      "current_price": 1817.33,
+      "current_value": 6.06,
+      "unrealized_pnl_pct": 4.57
     },
     "DOGE-USD": {
       "shares": 33119.311971,
       "avg_cost": 0.0799,
-      "current_price": 0.0589,
-      "current_value": 1950.73,
-      "unrealized_pnl_pct": -26.28
+      "current_price": 0.0591,
+      "current_value": 1957.35,
+      "unrealized_pnl_pct": -26.03
     },
     "NVDA": {
       "shares": 16.39024,
@@ -53,10 +53,10 @@
       "unrealized_pnl_pct": 21.9
     }
   },
-  "total_value": 9969.05,
-  "return_pct": -0.31,
+  "total_value": 9975.51,
+  "return_pct": -0.24,
   "peak_value": 12695.87,
   "max_drawdown": 21.48,
-  "last_updated": "2026-11-16",
+  "last_updated": "2026-11-17",
   "trade_count": 63
 }
