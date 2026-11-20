@@ -3029,5 +3029,30 @@
     ],
     "portfolio_value": 9808.13,
     "return_pct": -1.92
+  },
+  {
+    "date": "2026-11-20",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "NVDA",
+        "shares": 9.0488,
+        "price": 125.53,
+        "value": 1135.9,
+        "pct_sold": 50,
+        "justification": "Stop-loss: NVDA down 29.5%. Cutting half. Not a Trump asset so no emotional attachment."
+      },
+      {
+        "action": "SELL",
+        "ticker": "SOL-USD",
+        "shares": 17.9695,
+        "price": 68.82,
+        "value": 1236.66,
+        "pct_sold": 50,
+        "justification": "Stop-loss: SOL-USD down 26.2%. Cutting half. Not a Trump asset so no emotional attachment."
+      }
+    ],
+    "portfolio_value": 9019.98,
+    "return_pct": -9.8
   }
 ]
