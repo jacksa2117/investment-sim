@@ -3054,5 +3054,21 @@
     ],
     "portfolio_value": 9019.98,
     "return_pct": -9.8
+  },
+  {
+    "date": "2026-11-21",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "SOL-USD",
+        "shares": 8.9847,
+        "price": 68.75,
+        "value": 617.7,
+        "pct_sold": 50,
+        "justification": "Stop-loss: SOL-USD down 26.2%. Cutting half. Not a Trump asset so no emotional attachment."
+      }
+    ],
+    "portfolio_value": 9282.34,
+    "return_pct": -7.18
   }
 ]
