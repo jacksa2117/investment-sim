@@ -3070,5 +3070,21 @@
     ],
     "portfolio_value": 9282.34,
     "return_pct": -7.18
+  },
+  {
+    "date": "2026-11-24",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "NVDA",
+        "shares": 4.5244,
+        "price": 125.53,
+        "value": 567.95,
+        "pct_sold": 50,
+        "justification": "Stop-loss: NVDA down 29.5%. Cutting half. Not a Trump asset so no emotional attachment."
+      }
+    ],
+    "portfolio_value": 9179.7,
+    "return_pct": -8.2
   }
 ]
