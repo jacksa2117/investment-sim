@@ -3415,5 +3415,30 @@
     ],
     "portfolio_value": 10905.46,
     "return_pct": 9.05
+  },
+  {
+    "date": "2026-11-24",
+    "decisions": [
+      {
+        "action": "SELL",
+        "ticker": "DOGE-USD",
+        "shares": 0.0365,
+        "price": 0.06,
+        "value": 0.0,
+        "pct_sold": 50,
+        "justification": "Stop-loss: DOGE-USD down 28.8% and WSB buzz dying (0 mentions). Cutting losers."
+      },
+      {
+        "action": "SELL",
+        "ticker": "SOL-USD",
+        "shares": 0.0184,
+        "price": 69.74,
+        "value": 1.29,
+        "pct_sold": 50,
+        "justification": "Stop-loss: SOL-USD down 25.1% and WSB buzz dying (0 mentions). Cutting losers."
+      }
+    ],
+    "portfolio_value": 10915.66,
+    "return_pct": 9.16
   }
 ]
