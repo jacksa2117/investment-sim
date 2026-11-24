@@ -2979,5 +2979,20 @@
     ],
     "portfolio_value": 6795.05,
     "return_pct": -32.05
+  },
+  {
+    "date": "2026-11-24",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "NVDA",
+        "shares": 12.403,
+        "price": 165.05,
+        "value": 2047.12,
+        "justification": "Market PUMPING (4.7% today)! I HAVE to buy NVDA right now before it goes parabolic! 1W return: 5.7%."
+      }
+    ],
+    "portfolio_value": 6823.73,
+    "return_pct": -31.76
   }
 ]
