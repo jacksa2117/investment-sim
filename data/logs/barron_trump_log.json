@@ -3133,5 +3133,20 @@
     ],
     "portfolio_value": 9248.04,
     "return_pct": -7.52
+  },
+  {
+    "date": "2026-11-25",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "BTC-USD",
+        "shares": 0.0124,
+        "price": 60096.49,
+        "value": 747.04,
+        "justification": "RSI=26 oversold on BTC-USD. Classic dip buy. Trump sentiment: +0.00. F&G=50."
+      }
+    ],
+    "portfolio_value": 9275.06,
+    "return_pct": -7.25
   }
 ]
