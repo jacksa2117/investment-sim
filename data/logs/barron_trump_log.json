@@ -3148,5 +3148,20 @@
     ],
     "portfolio_value": 9275.06,
     "return_pct": -7.25
+  },
+  {
+    "date": "2026-11-26",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "MSTR",
+        "shares": 7.661,
+        "price": 79.96,
+        "value": 612.57,
+        "justification": "RSI=27 oversold on MSTR. Classic dip buy. Trump sentiment: +0.00. F&G=50."
+      }
+    ],
+    "portfolio_value": 9323.2,
+    "return_pct": -6.77
   }
 ]
