@@ -1,48 +1,48 @@
 {
   "agent_name": "Emotional",
   "starting_capital": 10000,
-  "cash": 4346.5168,
+  "cash": 2390.5842,
   "holdings": {
     "PLTR": {
-      "shares": 0.169944,
-      "avg_cost": 152.3381,
-      "current_price": 163.59,
-      "current_value": 27.8,
-      "unrealized_pnl_pct": 7.39
+      "shares": 11.530417,
+      "avg_cost": 171.8777,
+      "current_price": 172.17,
+      "current_value": 1985.19,
+      "unrealized_pnl_pct": 0.17
     },
     "COIN": {
       "shares": 0.809977,
       "avg_cost": 155.8141,
-      "current_price": 103.72,
-      "current_value": 84.01,
-      "unrealized_pnl_pct": -33.43
+      "current_price": 107.04,
+      "current_value": 86.7,
+      "unrealized_pnl_pct": -31.3
     },
     "AMD": {
       "shares": 0.682081,
       "avg_cost": 505.4787,
-      "current_price": 406.03,
-      "current_value": 276.95,
-      "unrealized_pnl_pct": -19.67
+      "current_price": 424.54,
+      "current_value": 289.57,
+      "unrealized_pnl_pct": -16.01
     },
     "TSLA": {
       "shares": 0.013331,
       "avg_cost": 408.4505,
-      "current_price": 380.14,
-      "current_value": 5.07,
-      "unrealized_pnl_pct": -6.93
+      "current_price": 400.0,
+      "current_value": 5.33,
+      "unrealized_pnl_pct": -2.07
     },
     "NVDA": {
       "shares": 12.405851,
       "avg_cost": 165.0595,
-      "current_price": 149.3,
-      "current_value": 1852.19,
-      "unrealized_pnl_pct": -9.55
+      "current_price": 150.49,
+      "current_value": 1866.96,
+      "unrealized_pnl_pct": -8.83
     }
   },
-  "total_value": 6592.54,
-  "return_pct": -34.07,
+  "total_value": 6624.34,
+  "return_pct": -33.76,
   "peak_value": 11565.68,
   "max_drawdown": 43.0,
   "last_updated": "2026-11-27",
-  "trade_count": 40
+  "trade_count": 41
 }
