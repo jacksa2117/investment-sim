@@ -3075,5 +3075,20 @@
     ],
     "portfolio_value": 6624.34,
     "return_pct": -33.76
+  },
+  {
+    "date": "2026-11-28",
+    "decisions": [
+      {
+        "action": "BUY",
+        "ticker": "PLTR",
+        "shares": 6.2483,
+        "price": 172.17,
+        "value": 1075.76,
+        "justification": "Market PUMPING (1.6% today)! I HAVE to buy PLTR right now before it goes parabolic! 1W return: 12.0%."
+      }
+    ],
+    "portfolio_value": 6624.34,
+    "return_pct": -33.76
   }
 ]
